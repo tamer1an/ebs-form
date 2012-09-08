@@ -1,0 +1,1115 @@
+/* Last published on : 05-Jul-12 15:10:24 */
+.flight-offer #klm-col-1,.flight-offer #klm-col-2 {
+	display: inline-block;
+	width: 467px;
+	float: left
+}
+
+.flight-offer #klm-col-1 {
+	margin-left: 12px
+}
+
+#klm-col-1 .offer-box,#klm-col-2 .offer-box {
+	display: inline-block;
+	margin: 25px 0 0
+}
+
+div.flight-offer div#klm-col-2 a:hover {
+	text-decoration: underline
+}
+
+.offer-box {
+	border: 1px solid #8DC9E8;
+	padding: 15px;
+	position: relative
+}
+
+.offer-box ul {
+	display: inline-block;
+	margin: 0;
+	overflow: hidden;
+	padding-bottom: 12px;
+	width: 435px
+}
+
+.offer-box li {
+	border-bottom: 1px dotted #5EB6E4;
+	float: left;
+	font-size: 12px;
+	height: 27px;
+	line-height: 27px;
+	list-style: none outside none;
+	margin-right: 10px;
+	position: relative;
+	width: 200px
+}
+
+.offer-box li:hover {
+	background-color: #EAF4FD
+}
+
+.offer-box li a:hover {
+	text-decoration: none !important
+}
+
+#klm-col-1 .offer-box h3,#klm-col-2 .offer-box h3 {
+	font-size: 21px;
+	font-weight: bold;
+	margin: 0 0 10px;
+	padding: 0
+}
+
+span.fare {
+	color: #E37222;
+	display: inline-block;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 15px
+}
+
+span.textafterdestination {
+	color: #808080
+}
+
+span.fare-arrow {
+	background:
+		url("http://www.klm.com/travel/generic/images/orange-right-arrow_tcm169-389869.gif")
+		no-repeat scroll center 3px transparent;
+	margin-top: 7px;
+	padding-left: 5px;
+	position: absolute;
+	right: 0;
+	width: 6px
+}
+
+span.single-forward-arrow {
+	margin-bottom: 1px
+}
+
+#triggers {
+	clear: none;
+	float: none;
+	margin-right: 1px;
+	margin-top: 10px;
+	overflow: hidden;
+	position: relative;
+	width: 400px
+}
+
+#triggers h2 span {
+	color: #E37222
+}
+
+#triggers h2 {
+	color: #00A1DE;
+	font-size: 22px;
+	font-weight: bold;
+	margin: 16px 0 0 15px
+}
+
+div.trigger {
+	display: inline;
+	float: left;
+	margin: 16px 0 0 0;
+	position: relative;
+	width: 467px
+}
+
+div.ups-trigger {
+	background:
+		url("http://www.klm.com/travel/generic/images/line_tcm169-358327.png")
+		no-repeat scroll center bottom transparent
+}
+
+.ups-trigger span {
+	float: right;
+	padding-top: 8px;
+	width: 60%;
+	font-size: 12px
+}
+
+.imagebug {
+	margin-top: -26px;
+	position: absolute
+}
+
+.offers {
+	display: inline-block;
+	margin-left: 12px
+}
+
+span.fare img {
+	vertical-align: middle
+}
+
+span.info {
+	margin-left: 4px
+}
+
+span.info img {
+	vertical-align: middle
+}
+
+#offer-footer {
+	padding: 9px 9px 0 9px;
+	display: inline-block;
+	font-size: 11px
+}
+
+#offer-footer h1 {
+	font-size: 15px !important;
+	font-family: NoaLight, verdana, helvetica, arial;
+	color: #00A1DE;
+	font-weight: bold
+}
+
+#europe-dest {
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px
+}
+
+#offer-footer ul {
+	border-top: 1px dotted #5EB6E4;
+	display: inline-block;
+	margin: 0;
+	overflow: hidden;
+	margin-top: 10px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	width: 965px
+}
+
+#offer-footer li {
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	list-style: none outside none;
+	position: relative;
+	width: 158px
+}
+
+span.footerintro {
+	color: #005B82;
+	line-height: 15px
+}
+
+span.footerdest {
+	background:
+		url("http://www.klm.com/travel/generic/images/single-arrow-right_tcm169-187480.gif")
+		no-repeat scroll 100% 5px transparent;
+	padding-right: 8px
+}
+
+div.promo-trigger {
+	border: 0 none !important;
+	float: left;
+	height: 115px !important;
+	margin-top: 13px;
+	width: 468px !important
+}
+
+div.extra-wide-trigger-border {
+	border: medium none !important;
+	display: block;
+	float: right;
+	height: 115px;
+	margin: 16px 0 0;
+	overflow: visible;
+	padding: 0;
+	position: relative;
+	text-decoration: none !important;
+	width: 468px
+}
+
+div#clock_container {
+	bottom: 15px;
+	height: 45px;
+	position: absolute;
+	right: 15px;
+	width: 200px
+}
+
+.bannerimage {
+	position: relative;
+	height: 200px;
+	margin-bottom: 35px
+}
+
+.thumbnail_1 {
+	position: absolute;
+	margin-left: 36px;
+	margin-top: 133px
+}
+
+.thumbnail_2 {
+	margin-left: 436px;
+	margin-top: 67px;
+	position: absolute
+}
+
+.thumbnail_3 {
+	position: absolute;
+	margin-left: 536px;
+	margin-top: 1px
+}
+
+.thumbnail_4 {
+	position: absolute;
+	margin-left: 636px;
+	margin-top: 67px
+}
+
+.thumbnail_5 {
+	position: absolute;
+	margin-left: 736px;
+	margin-top: 1px
+}
+
+.thumbnail_6 {
+	position: absolute;
+	margin-left: 836px;
+	margin-top: 67px
+}
+
+.thumbnail_7 {
+	position: absolute;
+	margin-left: 836px;
+	margin-top: 133px
+}
+
+h4.flighthotelheader {
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-bottom: 10px
+}
+
+div.fee {
+	margin-top: 10px
+}
+
+.offer-box li.flighthoteloffer {
+	width: 410px
+}
+
+.textonimage {
+	color: #00A1DE;
+	font-family: NoaLight, verdana, helvetica, arial;
+	font-size: 12px;
+	left: 50px;
+	position: absolute;
+	top: 15px
+}
+
+.textonimage h2.textonimageheader {
+	color: #00A1DE;
+	font-size: 19px;
+	font-weight: bold
+}
+
+.textonimage h2.textonimageheaderblue {
+	color: #00A1DE;
+	font-size: 28px;
+	font-weight: bold
+}
+
+.textonimage h2.textonimageheaderblue span {
+	color: #E37222;
+	font-size: 40px;
+	padding-left: 10px
+}
+
+h2,h3,h4,h5,h6 {
+	font-family: NoaLight, verdana, helvetica, arial;
+	font-weight: normal
+}
+
+#video {
+	position: relative;
+	height: 363px;
+	width: 982px
+}
+
+#video .textonimage {
+	left: 29px;
+	position: absolute;
+	top: 34px;
+	z-index: 1
+}
+
+#video .textonimage h2.textonimageheader {
+	color: #3F7890;
+	font-size: 22px
+}
+
+#video .textonimage h2.textonimageheaderblue {
+	color: #00A1DE;
+	font-size: 22px
+}
+
+#video .textonimage h2.textonimageheaderblue span {
+	padding-left: 4px;
+	color: #E37222
+}
+
+#video .textonimage {
+	color: #00A1DE
+}
+
+#video .playlabel {
+	color: #00A1DE;
+	position: absolute;
+	left: 425px;
+	top: 86px
+}
+
+.player {
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+#videoThumbs {
+	left: 150px;
+	position: absolute;
+	top: 330px
+}
+
+.thumbnails {
+	background-repeat: no-repeat;
+	float: left;
+	z-index: 20
+}
+
+.thumbnails a {
+	display: inline;
+	width: 39px;
+	height: 38px;
+	float: left;
+	padding: 0;
+	background: none
+}
+
+.thumbnails a:active,.thumbnails a:visited {
+	padding: 0
+}
+
+div.promo-trigger h4 {
+	font-size: 20px
+}
+
+#anchorbutton-outerbg {
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 0 2px #E1EEF4;
+	-webkit-box-shadow: 0 0 2px #E1EEF4;
+	box-shadow: 0 0 2px #E1EEF4;
+	margin-left: 160px;
+	margin-top: 165px;
+	border: 1px solid #E1EEF4;
+	background-color: #FFFFFF;
+	height: 70px;
+	width: 660px;
+	position: absolute
+}
+
+#anchorbutton-innerbg {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #D7EEF8;
+	background:
+		url("http://www.klm.com/travel/generic/images/anchorbutton-innerbg_tcm169-390905.gif");
+	background-repeat: repeat-x;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF),
+		to(#D7EEF8) );
+	background: -webkit-linear-gradient(top, #FFFFFF, #D7EEF8);
+	background: -moz-linear-gradient(top, #FFFFFF, #D7EEF8);
+	background: -ms-linear-gradient(top, #FFFFFF, #D7EEF8);
+	background: -o-linear-gradient(top, #FFFFFF, #D7EEF8);
+	margin-left: 10px;
+	margin-top: 10px;
+	height: 48px;
+	width: 638px;
+	position: absolute;
+	border: 1px solid #8DC9E8;
+	color: #00A1DE;
+	font-family: NoaLight, verdana, helvetica, arial;
+	text-align: center
+}
+
+#anchorbutton-innerbg a {
+	text-decoration: none
+}
+
+#anchorbutton-innerbg .anchor1 {
+	float: left;
+	display: inline-block;
+	border-right: 1px solid;
+	border-right-color: #8DC9E8;
+	width: 140px;
+	height: 48px;
+	cursor: pointer
+}
+
+#anchorbutton-innerbg .anchor1:hover {
+	color: #FFFFFF;
+	background-color: #00A1DE;
+	border: 1px solid #156A8F;
+	margin-top: -1px;
+	margin-left: -1px;
+	-moz-border-top-left-radius: 5px;
+	-moz-border-bottom-left-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px
+}
+
+#anchorbutton-innerbg .anchor2 {
+	float: left;
+	display: inline-block;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #8DC9E8;
+	width: 137px;
+	height: 48px;
+	cursor: pointer
+}
+
+#anchorbutton-innerbg .anchor2:hover {
+	color: #FFFFFF;
+	background-color: #00A1DE;
+	border: 1px solid #156A8F;
+	margin-top: -1px;
+	margin-left: -1px;
+	width: 138px
+}
+
+#anchorbutton-innerbg .anchor3 {
+	float: left;
+	display: inline-block;
+	border-left: 1px solid;
+	border-left-color: #FFFFFF;
+	border-right: 1px solid;
+	border-right-color: #8DC9E8;
+	width: 214px;
+	height: 48px;
+	cursor: pointer
+}
+
+#anchorbutton-innerbg .anchor3:hover {
+	color: #FFFFFF;
+	background-color: #00A1DE;
+	border: 1px solid #156A8F;
+	margin-top: -1px;
+	margin-left: -1px;
+	width: 215px
+}
+
+#anchorbutton-innerbg .anchor4 {
+	float: left;
+	display: inline-block;
+	border-left: 1px solid;
+	border-left-color: #FFFFFF;
+	width: 141px;
+	height: 48px;
+	cursor: pointer
+}
+
+#anchorbutton-innerbg .anchor4:hover {
+	color: #FFFFFF;
+	background-color: #00A1DE;
+	border: 1px solid #156A8F;
+	margin-top: -1px;
+	margin-left: -1px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px
+}
+
+.anchorbutton {
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 15px
+}
+
+.mejs-container {
+	position: absolute;
+	background: #000;
+	font-family: Helvetica, Arial
+}
+
+.mejs-container-fullscreen {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden
+}
+
+.mejs-container-fullscreen .mejs-mediaelement,.mejs-container-fullscreen video
+	{
+	width: 100%;
+	height: 100%
+}
+
+.mejs-background {
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+.mejs-mediaelement {
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+.mejs-poster {
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+.mejs-overlay {
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+.mejs-overlay-play {
+	cursor: pointer
+}
+
+.mejs-overlay-button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100px;
+	height: 100px;
+	margin: -50px 0 0 -50px;
+	background: none
+}
+
+.mejs-overlay:hover .mejs-overlay-button {
+	background-position: 0 -100px
+}
+
+.mejs-overlay-loading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80px;
+	height: 80px;
+	margin: -40px 0 0 -40px;
+	background: none
+}
+
+.mejs-overlay-loading span {
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: none
+}
+
+.mejs-container .mejs-controls {
+	background: none repeat scroll 0 0 #EAF4FD;
+	border: 1px solid #C2DEEA;
+	bottom: 0;
+	height: 36px;
+	left: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: 982px
+}
+
+.mejs-container .mejs-controls div {
+	list-style-type: none;
+	background-image: none;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	font-size: 11px;
+	line-height: 11px;
+	font-family: Helvetica, Arial;
+	background-color: #fff;
+	border: 1px solid #c2deea;
+	border-width: 1px 1px 1px 0;
+	position: relative;
+	top: -1px;
+	left: 0;
+	width: 36px;
+	height: 36px
+}
+
+.mejs-controls .mejs-button span {
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	text-decoration: none;
+	height: 36px;
+	width: 36px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #ffffff
+		url("http://www.klm.com/travel/generic/images/controls-klm_tcm169-358325.png")
+		0 0 no-repeat
+}
+
+.mejs-container .mejs-controls .mejs-time {
+	color: #fff;
+	display: block;
+	height: 17px;
+	width: auto;
+	padding: 8px 3px 0 3px;
+	overflow: hidden;
+	text-align: center;
+	padding: auto 4px
+}
+
+.mejs-container .mejs-controls .mejs-time span {
+	font-size: 11px;
+	color: #fff;
+	line-height: 12px;
+	display: block;
+	float: left;
+	margin: 1px 2px 0 0;
+	width: auto
+}
+
+.mejs-controls .mejs-play span {
+	background-position: 0 0
+}
+
+.mejs-controls .mejs-pause span {
+	background-position: 0 -36px
+}
+
+.mejs-controls .mejs-stop span {
+	background-position: -253px 0
+}
+
+.mejs-controls div.mejs-time-rail {
+	width: 200px;
+	padding-top: 5px
+}
+
+.mejs-controls .mejs-time-rail span {
+	display: block;
+	position: absolute;
+	width: 180px;
+	height: 10px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	cursor: pointer
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-total {
+	margin: 5px;
+	background: #333;
+	background: rgba(50, 50, 50, 0.8);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 30, 30,
+		0.8) ), to(rgba(60, 60, 60, 0.8) ) );
+	background: -moz-linear-gradient(top, rgba(30, 30, 30, 0.8),
+		rgba(60, 60, 60, 0.8) );
+	background: linear-gradient(rgba(30, 30, 30, 0.8), rgba(60, 60, 60, 0.8)
+		);
+	filter: progid : DXImageTransform.Microsoft.Gradient ( GradientType = 0,
+		startColorstr = #1E1E1E, endColorstr = #3C3C3C )
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-loaded {
+	background: #3caac8;
+	background: rgba(60, 170, 200, 0.8);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(44, 124, 145,
+		0.8) ), to(rgba(78, 183, 212, 0.8) ) );
+	background: -moz-linear-gradient(top, rgba(44, 124, 145, 0.8),
+		rgba(78, 183, 212, 0.8) );
+	background: linear-gradient(rgba(44, 124, 145, 0.8),
+		rgba(78, 183, 212, 0.8) );
+	filter: progid : DXImageTransform.Microsoft.Gradient ( GradientType = 0,
+		startColorstr = #2C7C91, endColorstr = #4EB7D4 );
+	width: 0
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-current {
+	width: 0;
+	background: #fff;
+	background: rgba(255, 255, 255, 0.8);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255,
+		0.9) ), to(rgba(200, 200, 200, 0.8) ) );
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.9),
+		rgba(200, 200, 200, 0.8) );
+	filter: progid : DXImageTransform.Microsoft.Gradient ( GradientType = 0,
+		startColorstr = #FFFFFF, endColorstr = #C8C8C8 )
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-handle {
+	display: none;
+	position: absolute;
+	margin: 0;
+	width: 10px;
+	background: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	border: solid 2px #333;
+	top: -2px;
+	text-align: center
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-float {
+	visibility: hidden;
+	position: absolute;
+	display: block;
+	background: #eee;
+	width: 36px;
+	height: 17px;
+	border: solid 1px #333;
+	top: -26px;
+	margin-left: -18px;
+	text-align: center;
+	color: #111
+}
+
+.mejs-controls .mejs-time-rail:hover .mejs-time-float {
+	visibility: visible
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-float-current {
+	margin: 2px;
+	width: 30px;
+	display: block;
+	text-align: center;
+	left: 0
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-float-corner {
+	position: absolute;
+	display: block;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	border: solid 5px #eee;
+	border-color: #eee transparent transparent transparent;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	top: 15px;
+	left: 13px
+}
+
+.mejs-controls .mejs-fullscreen-button span {
+	background-position: -72px 0
+}
+
+.mejs-controls .mejs-unfullscreen span {
+	background-position: -72px -36px
+}
+
+.mejs-controls .mejs-volume-button {
+	
+}
+
+.mejs-controls .mejs-mute span {
+	background-position: -36px -36px
+}
+
+.mejs-controls .mejs-unmute span {
+	background-position: -36px 0
+}
+
+.mejs-controls .mejs-volume-button {
+	position: relative
+}
+
+.mejs-controls .mejs-volume-button .mejs-volume-slider {
+	display: none;
+	height: 115px;
+	width: 34px;
+	background:
+		url("http://www.klm.com/travel/generic/images/background_tcm169-358324.png");
+	background: #fff;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	top: -117px;
+	left: 0;
+	z-index: 1;
+	position: absolute;
+	margin: 0;
+	border: 1px solid #C2DEEA
+}
+
+.mejs-controls .mejs-volume-button:hover {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0
+}
+
+.mejs-controls .mejs-volume-button:hover .mejs-volume-slider {
+	display: block
+}
+
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-total
+	{
+	position: absolute;
+	left: 14px;
+	top: 8px;
+	width: 4px;
+	height: 100px;
+	background: #fff;
+	margin: 0;
+	border: 1px solid #C2DEEA
+}
+
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current
+	{
+	position: absolute;
+	left: 14px;
+	top: 8px;
+	width: 4px;
+	height: 100px;
+	background: #00A1DE;
+	margin: 0;
+	border: 1px solid #C2DEEA
+}
+
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-handle
+	{
+	position: absolute;
+	left: 4px;
+	top: -3px;
+	width: 25px;
+	height: 6px;
+	background: #00A1DE;
+	cursor: N-resize;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	margin: 0;
+	border: 1px solid #C2DEEA
+}
+
+.mejs-controls .mejs-captions-button {
+	position: relative
+}
+
+.mejs-controls .mejs-captions-button span {
+	background-position: -48px 0
+}
+
+.mejs-controls .mejs-captions-button .mejs-captions-selector {
+	visibility: hidden;
+	position: absolute;
+	bottom: 26px;
+	right: -10px;
+	width: 130px;
+	height: 100px;
+	background:
+		url("http://www.klm.com/travel/generic/images/background_tcm169-358324.png");
+	background: rgba(50, 50, 50, 0.7);
+	border: solid 1px transparent;
+	padding: 10px;
+	overflow: hidden;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0
+}
+
+.mejs-controls .mejs-captions-button:hover .mejs-captions-selector {
+	visibility: visible
+}
+
+.mejs-controls .mejs-captions-button .mejs-captions-selector ul {
+	margin: 0;
+	padding: 0;
+	display: block;
+	list-style-type: none !important;
+	overflow: hidden
+}
+
+.mejs-controls .mejs-captions-button .mejs-captions-selector ul li {
+	margin: 0 0 6px 0;
+	padding: 0;
+	list-style-type: none !important;
+	display: block;
+	color: #fff;
+	overflow: hidden
+}
+
+.mejs-controls .mejs-captions-button .mejs-captions-selector ul li input
+	{
+	clear: both;
+	float: left;
+	margin: 3px 3px 0 5px
+}
+
+.mejs-controls .mejs-captions-button .mejs-captions-selector ul li label
+	{
+	width: 100px;
+	float: left;
+	padding: 4px 0 0 0;
+	line-height: 15px;
+	font-family: helvetica, arial;
+	font-size: 10px
+}
+
+.mejs-controls .mejs-captions-button .mejs-captions-translations {
+	font-size: 10px;
+	margin: 0 0 5px 0
+}
+
+.mejs-chapters {
+	position: absolute;
+	top: 0;
+	left: 0;
+	-xborder-right: solid 1px #fff;
+	width: 10000px
+}
+
+.mejs-chapters .mejs-chapter {
+	position: absolute;
+	float: left;
+	background: #222;
+	background: rgba(0, 0, 0, 0.7);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50,
+		0.7) ), to(rgba(0, 0, 0, 0.7) ) );
+	background: -moz-linear-gradient(top, rgba(50, 50, 50, 0.7),
+		rgba(0, 0, 0, 0.7) );
+	background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(0, 0, 0, 0.7) );
+	filter: progid : DXImageTransform.Microsoft.Gradient ( GradientType = 0,
+		startColorstr = #323232, endColorstr = #000000 );
+	overflow: hidden;
+	border: 0
+}
+
+.mejs-chapters .mejs-chapter .mejs-chapter-block {
+	font-size: 11px;
+	color: #fff;
+	padding: 5px;
+	display: block;
+	border-right: solid 1px #333;
+	border-bottom: solid 1px #333;
+	cursor: pointer
+}
+
+.mejs-chapters .mejs-chapter .mejs-chapter-block-last {
+	border-right: none
+}
+
+.mejs-chapters .mejs-chapter .mejs-chapter-block:hover {
+	background: #666;
+	background: rgba(102, 102, 102, 0.7);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(102, 102, 102,
+		0.7) ), to(rgba(50, 50, 50, 0.6) ) );
+	background: -moz-linear-gradient(top, rgba(102, 102, 102, 0.7),
+		rgba(50, 50, 50, 0.6) );
+	filter: progid : DXImageTransform.Microsoft.Gradient ( GradientType = 0,
+		startColorstr = #666666, endColorstr = #323232 )
+}
+
+.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-title {
+	font-size: 12px;
+	font-weight: bold;
+	display: block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin: 0 0 3px 0;
+	line-height: 12px
+}
+
+.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-timespan {
+	font-size: 12px;
+	line-height: 12px;
+	margin: 3px 0 4px 0;
+	display: block;
+	white-space: nowrap;
+	text-overflow: ellipsis
+}
+
+.mejs-captions-layer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	line-height: 22px;
+	font-size: 12px;
+	color: #fff
+}
+
+.mejs-captions-layer a {
+	color: #fff;
+	text-decoration: underline
+}
+
+.mejs-captions-layer[lang=ar] {
+	font-size: 20px;
+	font-weight: normal
+}
+
+.mejs-captions-position {
+	position: absolute;
+	width: 100%;
+	bottom: 15px;
+	left: 0
+}
+
+.mejs-captions-position-hover {
+	bottom: 45px
+}
+
+.mejs-captions-text {
+	padding: 3px 5px;
+	background:
+		url("http://www.klm.com/travel/generic/images/background_tcm169-358324.png");
+	background: rgba(20, 20, 20, 0.8)
+}
+
+.mejs-clear {
+	clear: both
+}
+
+.me-cannotplay {
+	
+}
+
+.me-cannotplay a {
+	color: #fff;
+	font-weight: bold
+}
+
+.me-cannotplay span {
+	padding: 15px;
+	display: block
+}
+
+.mejs-controls .mejs-loop-off span {
+	background-position: -64px -16px
+}
+
+.mejs-controls .mejs-loop-on span {
+	background-position: -64px 0
+}
+
+.mejs-controls .mejs-backlight-off span {
+	background-position: -80px -16px
+}
+
+.mejs-controls .mejs-backlight-on span {
+	background-position: -80px 0
+}
+
+.mejs-controls .mejs-picturecontrols-button {
+	background-position: -96px 0
+}

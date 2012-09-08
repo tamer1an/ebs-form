@@ -1,0 +1,27 @@
+/* Last published on : 21-Dec-10 17:19:30 */
+*{overflow:visible !important}
+span.sIFR-alternate{position:static !important;height:auto !important;width:auto !important;letter-spacing:normal !important;display:none}
+html>body:last-child span.sIFR-alternate{display:block}
+#klm-hdr div,#klm-nav,#klm-ftr,.c1,.c5,#image-box_mask{display:none !important}
+#klm-hdr div#klm-branding{display:block !important}
+.c24{margin-left:0 !important}
+div.c24 div.content{margin:0}
+#klm-body{font-size:125%;_font-size:75%}
+h2.ott-flight-title{_font-size:16px !important}
+#klm-ott #ott-flight-table TABLE,table#ott-departure-flight-table,table#ott-return-flight-table{_width:625px;width:100%}
+.print-this-image #klm-doc,.print-this-image iframe{display:none}
+body.print-this-image{overflow:hidden}
+#image-box_c{top:0 !important;left:0 !important}
+.hide-from-print,div.waiting-box,#ott-control-panel{display:none !important}
+.button-week-earlier,.button-week-later,.clearer{display:none !important}
+div.below-anchor-links{clear:both}
+#ott-dashboard-body,#ott-dashboard-body #db_ott_content{display:none}
+#ott-flight-table{position:absolute}
+#ott-flight-table *{position:relative}
+#klm-ott #ott-flight-table fieldset{width:100%;_width:625px}
+#klm-aad,#klm-aad .flight-details div.flight-number,#klm-aad div#aandd-flight-container{font-size:100% !important;_font-size:100% !important}
+#klm-aad{_width:744px;width:100%;padding:0}
+#klm-aad .klm-form{_width:744px;width:100%;padding:0;margin:0;clear:both}
+#klm-aad .aandd-flight-container{_width:744px;width:100%;margin:0}
+#klm-aad .aandd-flight-container *{overflow:hidden !important}
+#klm-aad .flight-details{float:none;clear:both}
