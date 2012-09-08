@@ -1,0 +1,31 @@
+{
+ "uuid" : "5770c6d24849407eb21a741f90b662c5", 
+ "mainFile" : "1mobi.html", 
+ "wholeFilesHash" : "3PjXa0R5TLpWoxnJCqEiE6IP+N0=", 
+ "files" : [
+  {"name" : "1mobi.css", "hash" : "80DliAScYnZtpnwbd/sxKleCEFc=", "generated" : true}, 
+  {"name" : "1mobi.html", "hash" : "yK0X+kYBnMEm2ENLPu8OiN0vets=", "generated" : true}, 
+  {"name" : "1mobi.js", "hash" : "9JWSVLy4UHHBi/OBnl670tkEvO0=", "generated" : true}, 
+  {"name" : "1mobi_custom.js", "hash" : "H8hqzoIiJgK6XnvqmMU3I8UAh7Y=", "generated" : false}, 
+  {"name" : "res/images/homescreenPrompt.png", "hash" : "P/v6kOtOHYAiWfpFo/d4S9TMfvs=", "generated" : true}, 
+  {"name" : "res/images/icon.png", "hash" : "yKcxtO1SE721CyxkZl/OZslqLOQ=", "generated" : true}, 
+  {"name" : "res/images/pinstripes.png", "hash" : "rJeKbR4/TjtnkwIXkVjFhKd3woc=", "generated" : true}, 
+  {"name" : "res/images/pushButton.png", "hash" : "XMPtfum0HANX1h8VzRvw12QChyc=", "generated" : true}, 
+  {"name" : "res/images/pushButton_touch.png", "hash" : "++r+O0RdKw2rscIA8K60+YtHvI8=", "generated" : true}, 
+  {"name" : "res/images/sw-alpha-multi.png", "hash" : "msgbODRc9VGU22U8qAr0n/b2cts=", "generated" : true}, 
+  {"name" : "res/images/sw-alpha.png", "hash" : "F6Oiz2fhB1Tz7IpK5ogBY+6ocwk=", "generated" : true}, 
+  {"name" : "res/images/sw-button-cancel.png", "hash" : "3r49CsJsV9KEM75YQTrlXoQtKDw=", "generated" : true}, 
+  {"name" : "res/images/sw-button-done.png", "hash" : "sBV7Crz+IhJHDMEo5LlIQBrXb2w=", "generated" : true}, 
+  {"name" : "res/images/sw-check.png", "hash" : "6VSyxiUTjAM0gUSRKspYALGfL60=", "generated" : true}, 
+  {"name" : "res/images/sw-header.png", "hash" : "MCc+c4jAKbcBvE6d1qgv+owXR88=", "generated" : true}, 
+  {"name" : "res/images/sw-no-check.png", "hash" : "cZs5Gq9rUp3yDZiQofSYKBs3xEs=", "generated" : true}, 
+  {"name" : "res/images/sw-slot-border.png", "hash" : "2oP9+pszlAGoOuRnQmDcFpblHQU=", "generated" : true}, 
+  {"name" : "res/iscroll.js", "hash" : "xmhDPelhzlK7DGx5vSbki1w17K8=", "generated" : true}, 
+  {"name" : "res/jquery-1.7.1.min.js", "hash" : "0eHz8IKPpm+1dE9CvJEmlOBjAPk=", "generated" : true}, 
+  {"name" : "res/phoneui.js", "hash" : "SjQfRvfiKxtvLWc3z9SkzEQulE0=", "generated" : true}, 
+  {"name" : "res/preloadCssImages.js", "hash" : "mCAGMF1mInkBJoiegEEC2trgdos=", "generated" : true}, 
+  {"name" : "res/spinningwheel.css", "hash" : "lhc5VNlfu3fUvln5sTSbi5UZvu0=", "generated" : true}, 
+  {"name" : "res/spinningwheel.js", "hash" : "XbzAYPuQURp2K0JH5m3GpAHbbEM=", "generated" : true}
+ ], 
+ "networkUrls" : []
+}
