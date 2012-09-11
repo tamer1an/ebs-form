@@ -83,14 +83,22 @@
 </head>
 
 <body class="fc"> <!--  onload="init()" -->
-  <section id="page" class="w100pc" data-role="page">
-	<header class="ptb15"> Our dinamic home page </header>
-	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis pulvinar augue, at pellentesque urna vehicula non. Aenean facilisis pellentesque dapibus. Aliquam sodales eros viverra odio semper consectetur. Sed tempus dapibus nibh, eget imperdiet neque ullamcorper quis. Vestibulum consectetur, arcu malesuada sollicitudin pretium, lacus risus mollis enim, a adipiscing nunc nibh sit amet mauris. Duis pellentesque, nunc nec scelerisque convallis, est velit convallis velit, quis luctus est est quis magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium dictum nisl iaculis mollis. Aliquam convallis rutrum erat ut mollis. Donec congue urna sit amet mauris malesuada et dignissim libero iaculis. </p>
-	<ul class="pt15 dotList">
-		<li><a href="#">Section 1 </a></li>
-		<li><a href="#">Section 2 </a></li>
-		<li><a href="#">Section 3 </a></li>
-	</ul>
+  <section id="page" class="w100pc plr12" data-role="page">
+	<header class="ptb15 header h1"> Our dinamic home page </header>
+	
+	<section class="pb15">
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis pulvinar augue, at pellentesque urna vehicula non. Aenean facilisis pellentesque dapibus. Aliquam sodales eros viverra odio semper consectetur. Sed tempus dapibus nibh, eget imperdiet neque ullamcorper quis. Vestibulum consectetur, arcu malesuada sollicitudin pretium, lacus risus mollis enim, a adipiscing nunc nibh sit amet mauris. Duis pellentesque, nunc nec scelerisque convallis, est velit convallis velit, quis luctus est est quis magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium dictum nisl iaculis mollis. Aliquam convallis rutrum erat ut mollis. Donec congue urna sit amet mauris malesuada et dignissim libero iaculis. </p>
+		<ul class="pt15 dotList">
+			<li><a href="application/view/section/1/" target="section">Section 1</a></li>
+			<li><a href="application/view/section/2/" target="section">Section 2</a></li>
+			<li><a href="application/view/section/3/" target="section">Section 3</a></li>
+		</ul>
+	</section>
+	
+	<footer> 
+		<iframe id="sIframe" name="section" frameborder="0" height="300px" width="500px" scrolling="no" src=""></iframe>
+	</footer>
+	
   </section>
   
   <!-- JavaScript -->

@@ -1,13 +1,22 @@
 @charset "windows-1251";
+.pb15{ padding-bottom: 15px; }
 
 .pt15 { padding-top: 15px; }
-.ptb15 { padding: 15px 0; }
 
-section#page { padding: 0 12px; }
-section#page  header {
-	font-size:24px;
+.ptb15 { padding: 25px 0; }
+
+.plr12 { padding: 0 12px;  }
+
+.h1 {	font-size:34px; }
+.h2 {	font-size:26px; }
+
+.header {
 	font-weight:bold; 
 	padding: 15px 0;
+	white-space: nowrap; 
+    overflow: hidden; 
+    padding: 5px;
+    text-overflow: ellipsis; 
 }
 
 .dotList{ 
@@ -31,7 +40,11 @@ section#page  header {
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (max-width : 480px) {
-	
+	section#page  p {
+		color:darkgrey;
+		height:50px;
+		overflow: hidden; 
+	}	
 }
 
 /* Smartphones (portrait) ----------- */
