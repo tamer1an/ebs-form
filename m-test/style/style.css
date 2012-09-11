@@ -1,0 +1,18 @@
+@charset "windows-1251";
+
+.pt15 { padding-top: 15px; }
+.ptb15 { padding: 15px 0; }
+
+section#page { padding: 0 12px; }
+section#page  header {
+	font-size:24px;
+	font-weight:bold; 
+	padding: 15px 0;
+}
+
+.dotList{ 
+	list-style-image: none;
+	list-style-type:  disc; 
+	margin-left:35px;
+}
+.dotList li { padding-top: 3px; } 
