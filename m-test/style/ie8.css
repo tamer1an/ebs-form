@@ -1,0 +1,10 @@
+.screen480{
+	color:darkgrey;
+	height:50px;
+	overflow: hidden; 
+}
+.screen640{
+	color:black;
+	height:none;
+	overflow: hidden; 
+}

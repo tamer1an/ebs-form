@@ -16,9 +16,9 @@
 		// define('GOOGLE_FONT','http://fonts.googleapis.com/css?family=');
 
 	// "JavaScripts"
-	define ('JS',SYS_URL.'js/libs/');
-	define ('JQ',JS.'jq/'); 
-		define ('JQCDN','//code.jquery.com/jquery-1.8.1.min.js');
+	// define ('JS',SYS_URL.'js/libs/');
+	// define ('JQ',JS.'jq/'); 
+		// define ('JQCDN','//code.jquery.com/jquery-1.8.1.min.js');
 		// Development (Full) version
 		// http://code.jquery.com/jquery-1.8.1.js 	
 
@@ -28,13 +28,10 @@
 	define ('SITE_NAME','Memonic'); 
 	define ('TITLE','Memonic test'); 
 	define ('TYPE','test'); 
-	
-	// <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-	// <html xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="http://schema.org/Review" dir="ltr" lang="en-US">
 ?>
 
 <!DOCTYPE html>
-<html lang="en" manifest="offline/memonic.manifest">
+<html lang="en" manifest="offline/memonic.manifest" itemscope itemtype="http://schema.org/Review">
 <head> 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -77,50 +74,40 @@
 	
   <!-- CSS for printing page-->
   <link  href="<?=CSS?>print.css" 		rel="stylesheet" type="text/css" media="print"> 
- 		
-  <!-- modernizr 2.6.2 custom build --> 
-  <script src="<?=JS?>modernizr.js"></script>
+ 		 
+    <!--[if lte IE 8]>
+		  <link  href="<?=CSS?>ie8.css" rel="stylesheet" type="text/css" media="screen">
+		   <script src="js/script.js"></script>
+	  <![endif]--> 
 </head>
 
 <body class="fc"> <!--  onload="init()" -->
-  <section id="page" class="w98pc plr12" data-role="page">
-	<header class="ptb15 header h1"> Our dinamic home page </header>
+  <section id="page" class="w98pc" data-role="page">
+	<header data-role="header">
+		<p class="ptb15 header h1"> Our dinamic home page </p>
+	</header>
 	
-	<section class="pb15">
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis pulvinar augue, at pellentesque urna vehicula non. Aenean facilisis pellentesque dapibus. Aliquam sodales eros viverra odio semper consectetur. Sed tempus dapibus nibh, eget imperdiet neque ullamcorper quis. Vestibulum consectetur, arcu malesuada sollicitudin pretium, lacus risus mollis enim, a adipiscing nunc nibh sit amet mauris. Duis pellentesque, nunc nec scelerisque convallis, est velit convallis velit, quis luctus est est quis magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium dictum nisl iaculis mollis. Aliquam convallis rutrum erat ut mollis. Donec congue urna sit amet mauris malesuada et dignissim libero iaculis. </p>
+	<section class="pb15" data-role="content">
+		<p id="title"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis pulvinar augue, at pellentesque urna vehicula non. Aenean facilisis pellentesque dapibus. Aliquam sodales eros viverra odio semper consectetur. Sed tempus dapibus nibh, eget imperdiet neque ullamcorper quis. Vestibulum consectetur, arcu malesuada sollicitudin pretium, lacus risus mollis enim, a adipiscing nunc nibh sit amet mauris. Duis pellentesque, nunc nec scelerisque convallis, est velit convallis velit, quis luctus est est quis magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium dictum nisl iaculis mollis. Aliquam convallis rutrum erat ut mollis. Donec congue urna sit amet mauris malesuada et dignissim libero iaculis. </p>
 		<ul class="pt15 dotList">
-			<li><a href="application/view/section/1/" target="section">Section 1</a></li>
-			<li><a href="application/view/section/2/" target="section">Section 2</a></li>
-			<li><a href="application/view/section/3/" target="section">Section 3</a></li>
+			<li itemprop="url"><a href="application/view/section/1/" target="section">Section 1</a></li>
+			<li itemprop="url"><a href="application/view/section/2/" target="section">Section 2</a></li>
+			<li itemprop="url"><a href="application/view/section/3/" target="section">Section 3</a></li>
 		</ul>
 	</section>
 	
-	<footer> 
+	<footer itemprop="review" data-role="footer"> 
 		<iframe id="sIframe" name="section" frameborder="0" height="300px" width="500px" scrolling="no" src=""></iframe>
 	</footer>
-	
   </section>
-  
-  <script src="js/script.js"></script>
   <!-- Support IE 7 (Print page)-->
    <!--[if lte IE 7]>
 		 <script type="text/javascript" src="print.js"></script>
 	  <![endif]--> 
+	  
+   <!-- JavaScript -->
+  <!-- jQuery 1.8.1 --> 
+  <!--script src="<=JQCDN?>"></script> 
+  <script>window.jQuery || document.write('<script src="<=JQ?>jq.js"><\/script>')</script-->
 </body>
 </html>
-
-<?
-/*
- * 
- * http://screencast.com/t/pdFedjHWZU
- 
-	This is the small project we'd like you to complete for your interview at Memonic. You can send us the result as a ZIP file when you're ready.
-
-	Task 1:
-		Replicate the page from the screencast at <http://screencast.com/t/pdFedjHWZU> inluding the navigation to the various sections. 
-		You can only rely on HTML and CSS for that. No JavaScript should be needed. The result only has to work correctly in Google Chrome.
-
-	Task 2:
-		Create the navigation from task 1 (Section 1, Section 2, Section 3) so it also works in Internet Explorer 8+. Try to create the JavaScript i
-		n as unobtrusive a manner as possible. Do not rely on any JavaScript library.
-*/

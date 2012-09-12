@@ -1,11 +1,11 @@
 @charset "windows-1251";
+body { padding: 0 12px;  }
+
 .pb15{ padding-bottom: 15px; }
 
 .pt15 { padding-top: 15px; }
 
 .ptb15 { padding: 25px 0; }
-
-.plr12 { padding: 0 12px;  }
 
 .h1 {	font-size:34px; }
 .h2 {	font-size:26px; }
@@ -17,7 +17,6 @@
 	padding: 15px 0;
 	white-space: nowrap; 
     overflow: hidden; 
-    padding: 5px;
     text-overflow: ellipsis; 
 }
 
@@ -28,8 +27,8 @@
 }
 .dotList li { padding-top: 3px; } 
 
-
-
+	
+	
 /* iPad (landscape) ----------- */
 @media screen and (max-width:960px) {
 	
@@ -42,7 +41,7 @@
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (max-width : 480px) {
-	section#page  p {
+	section#page  section p {
 		color:darkgrey;
 		height:50px;
 		overflow: hidden; 
