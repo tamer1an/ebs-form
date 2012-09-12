@@ -83,7 +83,7 @@
 </head>
 
 <body class="fc"> <!--  onload="init()" -->
-  <section id="page" class="w100pc plr12" data-role="page">
+  <section id="page" class="w98pc plr12" data-role="page">
 	<header class="ptb15 header h1"> Our dinamic home page </header>
 	
 	<section class="pb15">
@@ -101,11 +101,6 @@
 	
   </section>
   
-  <!-- JavaScript -->
-  <!-- jQuery 1.8.1 --> 
-  <script src="<?=JQCDN?>"></script> 
-  <script>window.jQuery || document.write('<script src="<?=JQ?>jq.js"><\/script>')</script>
- 
   <script src="js/script.js"></script>
   <!-- Support IE 7 (Print page)-->
    <!--[if lte IE 7]>
