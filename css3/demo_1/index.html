@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)http://sandbox.webpro.nl/css3/3d-transforms-interactive-demo.html -->
+<html lang="en" class=" -webkit-"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>CSS 3D Transforms (Interactive Demo)</title>
+		<style type="text/css">
+
+			/* Generic styles */
+
+			* {
+				box-sizing: border-box;
+			}
+
+			html, body {
+				height: 100%;
+			}
+
+			body {
+				font-family: Helvetica;
+				color: #333;
+			}
+
+			/* Canvas/stage styles */
+
+			#stage {
+				width: 100%;
+				height: 400px;
+				background-color: #EEE;
+				border: 1px solid #CCC;
+
+				-webkit-perspective: 800px;
+				-webkit-perspective-origin: 50% 50%;
+			}
+
+			/* Shape/face styles */
+
+			#shape {
+				position: relative;
+				top: 100px;
+				margin: 0 auto;
+				height: 200px;
+				width: 200px;
+				-webkit-transform-style: preserve-3d;
+
+				-webkit-animation-name: spin;
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-timing-function:linear;
+				-webkit-animation-duration: 8s;
+
+			}
+
+			.face {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-color: #333;
+				border: 1px solid #000;
+				opacity: 0.7;
+				color: #393939;
+				font-size: 10em;
+			}
+
+			.face:nth-child(1) {
+				-webkit-transform: rotateY(0deg) translateZ(280px);
+			}
+			.face:nth-child(2) {
+				-webkit-transform: rotateY(45deg) translateZ(280px);
+			}
+			.face:nth-child(3) {
+				-webkit-transform: rotateY(90deg) translateZ(280px);
+			}
+			.face:nth-child(4) {
+				-webkit-transform: rotateY(135deg) translateZ(280px);
+			}
+			.face:nth-child(5) {
+				-webkit-transform: rotateY(180deg) translateZ(280px);
+			}
+			.face:nth-child(6) {
+				-webkit-transform: rotateY(225deg) translateZ(280px);
+			}
+			.face:nth-child(7) {
+				-webkit-transform: rotateY(270deg) translateZ(280px);
+			}
+			.face:nth-child(8) {
+				-webkit-transform: rotateY(315deg) translateZ(280px);
+			}
+
+			/* Animations */
+
+			@-webkit-keyframes spin {
+				from {
+					-webkit-transform: rotateY(0);
+				}
+				to {
+					-webkit-transform: rotateY(-360deg);
+				}
+			}
+
+			/* Form/configuration styles */
+
+			form {
+				margin-top: 1em;
+			}
+
+			fieldset {
+				display: inline-block;
+				vertical-align: top;
+				width: 450px;
+				border: 1px solid #333;
+				box-shadow: 3px 3px 3px #999;
+				border-radius: 5px;
+				margin-bottom: 10px;
+			}
+
+			input[type=range], output {
+				float: right;
+			}
+
+			input[type=range] {
+				margin: 2px 0 0;
+			}
+
+			output {
+				width: 100px;
+				text-align: right;
+			}
+
+		</style>
+
+	</head>
+	<body>
+		<h1>CSS 3D Transforms: Interactive Demo</h1>
+
+		<div id="stage" style="-webkit-perspective: 800px; -webkit-perspective-origin-x: 50%; -webkit-perspective-origin-y: 50%;">
+			<div id="shape" style="-webkit-transform-style: preserve-3d; -webkit-animation: 8s; background-color: transparent;">
+				<div class="face" style="-webkit-transform: matrix3d(1, 0, 0, 0, 0, 1.000001, -0.000003, 0, 0, 0.000003, 1.000001, 0, 0, 0, 280, 1); opacity: 0.7; -webkit-backface-visibility: visible;">1</div>
+				<div class="face" style="-webkit-transform: matrix3d(0.707107, 0, -0.707107, 0, 0.000002, 1.000001, 0.000002, 0, 0.707101, 0.000003, 0.707101, 0, 197.989899, 0, 197.989898, 1); opacity: 0.7; -webkit-backface-visibility: visible;">2</div>
+				<div class="face" style="-webkit-transform: matrix3d(0, 0, -1, 0, -0.000003, 1.000001, 0, 0, 1.000001, 0.000003, 0, 0, 280, 0, 0, 1); opacity: 0.7; -webkit-backface-visibility: visible;">3</div>
+				<div class="face" style="-webkit-transform: matrix3d(-0.707107, 0, -0.707107, 0, 0.000002, 1.000001, -0.000002, 0, 0.707101, 0.000003, -0.707101, 0, 197.989898, 0, -197.989899, 1); opacity: 0.7; -webkit-backface-visibility: visible;">4</div>
+				<div class="face" style="-webkit-transform: matrix3d(-1, 0, 0, 0, 0, 1.000001, 0.000003, 0, 0, 0.000003, -1.000001, 0, 0, 0, -280, 1); opacity: 0.7; -webkit-backface-visibility: visible;">5</div>
+				<div class="face" style="-webkit-transform: matrix3d(-0.707107, 0, 0.707107, 0, -0.000002, 1.000001, -0.000002, 0, -0.707101, 0.000003, -0.707101, 0, -197.989899, 0, -197.989898, 1); opacity: 0.7; -webkit-backface-visibility: visible;">6</div>
+				<div class="face" style="-webkit-transform: matrix3d(0, 0, 1, 0, 0.000003, 1.000001, 0, 0, -1.000001, 0.000003, 0, 0, -280, 0, 0, 1); opacity: 0.7; -webkit-backface-visibility: visible;">7</div>
+				<div class="face" style="-webkit-transform: matrix3d(0.707107, 0, 0.707107, 0, -0.000002, 1.000001, 0.000002, 0, -0.707101, 0.000003, 0.707101, 0, -197.989898, 0, 197.989899, 1); opacity: 0.7; -webkit-backface-visibility: visible;">8</div>
+			</div>
+		</div>
+
+		<form id="config">
+
+			<fieldset>
+				<em>#stage</em>
+				<div>
+					<label>perspective (px)</label>
+					<output name="output_perspective" for="perspective">800</output><input type="range" id="perspective" min="100" max="2000" value="800" data-target="#stage" data-unit="px">
+				</div>
+
+				<div>
+					<label>perspective-origin-x (%)</label>
+					<output name="output_perspective-origin-x" for="perspective-origin-x">50</output><input type="range" id="perspective-origin-x" min="0" max="100" data-target="#stage" data-unit="%">
+				</div>
+
+				<div>
+					<label>perspective-origin-y (%)</label>
+					<output name="output_perspective-origin-y" for="perspective-origin-y">50</output><input type="range" id="perspective-origin-y" min="0" max="100" data-target="#stage" data-unit="%">
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<em>#shape (.face origin)</em>
+				<div>
+					transform-style:
+					<label>
+						<input type="radio" id="transform-style-preserve-3d" name="transform-style" value="preserve-3d" data-target="#shape" checked="">
+						preserve 3d
+					</label>
+					<label>
+						<input type="radio" id="transform-style-flat" name="transform-style" value="flat" data-target="#shape">
+						flat
+					</label>
+				</div>
+				<div>
+					<label>animation-duration (s)</label>
+					<output name="output_animation-duration" for="animation-duration">8</output><input type="range" id="animation-duration" min="1" max="20" value="8" data-target="#shape" data-unit="s">
+				</div>
+				<div>
+					visibility:
+					<label>
+						<input type="radio" id="background-color-transparent" name="background-color" value="transparent" data-target="#shape" checked="">
+						transparent
+					</label>
+					<label>
+						<input type="radio" id="background-color-solid" name="background-color" value="#333" data-target="#shape">
+						solid
+					</label>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<em>.face (matrix.translate)</em>
+				<div>
+					<label>translateX (px)</label>
+					<output name="output_translateX" for="translateX">0</output><input type="range" id="translateX" min="-280" max="280" data-target=".face" data-unit="px" data-transform="translateX">
+				</div>
+				<div>
+					<label>translateY (px)</label>
+					<output name="output_translateY" for="translateY">0</output><input type="range" id="translateY" min="-280" max="280" data-target=".face" data-unit="px" data-transform="translateY">
+				</div>
+				<div>
+					<label>translateZ (px)</label>
+					<output name="output_translateZ" for="translateZ">0</output><input type="range" id="translateZ" min="-280" max="280" data-target=".face" data-unit="px" data-transform="translateZ">
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<em>.face (matrix.rotate)</em>
+				<div>
+					<label>rotateX (deg)</label>
+					<output name="output_rotateX" for="rotateX">0</output><input type="range" id="rotateX" min="-180" max="180" value="0" data-target=".face" data-unit="deg" data-transform="rotateX">
+				</div>
+				<div>
+					<label>rotateY (deg)</label>
+					<output name="output_rotateY" for="rotateY">0</output><input type="range" id="rotateY" min="-180" max="180" value="0" data-target=".face" data-unit="deg" data-transform="rotateY">
+				</div>
+				<div>
+					<label>rotateZ (deg)</label>
+					<output name="output_rotateZ" for="rotateZ">0</output><input type="range" id="rotateZ" min="-180" max="180" value="0" data-target=".face" data-unit="deg" data-transform="rotateZ">
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<em>.face (matrix.scale)</em>
+				<div>
+					<label>scaleX</label>
+					<output name="output_scaleX" for="scaleX">1</output><input type="range" id="scaleX" min="0.1" max="1.5" step="0.1" value="1" data-target=".face" data-unit="" data-transform="scaleX">
+				</div>
+				<div>
+					<label>scaleY</label>
+					<output name="output_scaleY" for="scaleY">1</output><input type="range" id="scaleY" min="0.1" max="1.5" step="0.1" value="1" data-target=".face" data-unit="" data-transform="scaleY">
+				</div>
+				<div>
+					<label>scaleZ</label>
+					<output name="output_scaleZ" for="scaleZ">1</output><input type="range" id="scaleZ" min="0.1" max="1.5" step="0.1" value="1" data-target=".face" data-unit="" data-transform="scaleZ">
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<em>.face (matrix.skew)</em>
+				<div>
+					<label>skewX</label>
+					<output name="output_skewX" for="skewX">0</output><input type="range" id="skewX" min="-180" max="180" value="0" data-target=".face" data-unit="" data-transform="skewX">
+				</div>
+				<div>
+					<label>skewY</label>
+					<output name="output_skewY" for="skewY">0</output><input type="range" id="skewY" min="-180" max="180" value="0" data-target=".face" data-unit="" data-transform="skewY">
+				</div>
+			</fieldset>
+			<fieldset>
+				<em>.face</em>
+				<div>
+					<label>opacity</label>
+					<output name="output_opacity" for="opacity">0.7</output><input type="range" id="opacity" min="0" max="1" step="0.1" value="0.7" data-target=".face" data-unit="">
+				</div>
+
+				<div>
+					backface-visibility:
+					<label>
+						<input type="radio" id="backface-visibility-visible" name="backface-visibility" value="visible" data-target=".face" checked="">
+						visible
+					</label>
+					<label>
+						<input type="radio" id="backface-visibility-hidden" name="backface-visibility" value="hidden" data-target=".face">
+						hidden
+					</label>
+				</div>
+			</fieldset>
+
+			<input type="reset">
+
+		</form>
+
+		<script src="./CSS 3D Transforms (Interactive Demo)_files/prefixfree.min.js"></script>
+		<script src="./CSS 3D Transforms (Interactive Demo)_files/html5slider.js"></script>
+		<script src="./CSS 3D Transforms (Interactive Demo)_files/lib.js"></script>
+
+		<script>
+
+			var configAll = $$('input[type=range], input[type=radio]');
+			var configRange = $$('input[type=range]');
+			var configReset = $$('input[type=range], input[type=radio]:checked');
+
+			var initConfigHandlers = function() {
+
+				[].forEach.call(configAll, function(element) {
+					element.addEventListener('change', function(event) {
+						updateAnimation(event.target);
+					}, false);
+				});
+			};
+
+			var updateAnimation = function(element) {
+
+				var units = element.getAttribute('data-unit') || '',
+					value = element.value,
+					previousValue = element._previousValue || element.defaultValue || 0,
+					property = element.name || element.id,
+					targets = $$(element.getAttribute('data-target')),
+					transform,
+					matrix;
+
+				[].forEach.call(targets, function(target) {
+					transform = element.getAttribute('data-transform');
+					if(transform) {
+
+						/*
+						 * For possible operations on WebKitCSSMatrix, see:
+						 * https://developer.apple.com/library/safari/#documentation/AudioVideo/Reference/WebKitCSSMatrixClassReference/WebKitCSSMatrix/WebKitCSSMatrix.html
+						 */
+
+						var MatrixImpl =
+								typeof WebKitCSSMatrix !== 'undefined' ? WebKitCSSMatrix :
+								typeof MozCSSMatrix !== 'undefined' ? MozCSSMatrix :
+								typeof MSCSSMatrix !== 'undefined' ? MSCSSMatrix :
+								typeof OCSSMatrix !== 'undefined' ? OCSSMatrix :
+								typeof CSSMatrix !== 'undefined' ? CSSMatrix :
+								null;
+
+						if(!MatrixImpl) {
+							return;
+						}
+
+						matrix = new MatrixImpl(window.getComputedStyle(target)[getStyleName('transform')]);
+
+						value = parseFloat(value), previousValue = parseFloat(previousValue);
+
+						switch(transform) {
+							case 'translateX':
+								matrix = matrix.translate(value - previousValue, 0, 0);
+								break;
+							case 'translateY':
+								matrix = matrix.translate(0, value - previousValue, 0);
+								break;
+							case 'translateZ':
+								matrix = matrix.translate(0, 0, value - previousValue);
+								break;
+							case 'rotateX':
+								matrix = matrix.rotate(value - previousValue, 0, 0);
+								break;
+							case 'rotateY':
+								matrix = matrix.rotate(0, value - previousValue, 0);
+								break;
+							case 'rotateZ':
+								matrix = matrix.rotate(0, 0, value - previousValue);
+								break;
+							case 'scaleX':
+								matrix = matrix.scale(value / previousValue, 1, 1);
+								break;
+							case 'scaleY':
+								matrix = matrix.scale(1, value / previousValue, 1);
+								break;
+							case 'scaleZ':
+								matrix = matrix.scale(1, 1, value / previousValue);
+								break;
+							case 'skewX':
+								matrix = matrix.skewX(value - previousValue);
+								break;
+							case 'skewY':
+								matrix = matrix.skewY(value - previousValue);
+								break;
+						}
+
+						target.style[getStyleName('transform')] = matrix;
+
+					} else {
+
+						target.style[getStyleName(property)] = value + units;
+
+					}
+				});
+
+				element._previousValue = value;
+			}
+
+			var initOutputValues = function() {
+
+				[].forEach.call(configRange, function(element) {
+
+					element.addEventListener('change', function(event) {
+						element = event.target;
+						$('output[name=output_'+ element.id +']').value = element.value.substr(0, 11);
+					});
+
+					output = document.createElement('output');
+					output.name = 'output_' + element.id;
+					output.setAttribute('for', element.id);
+					output.defaultValue = output.value = element.value.substr(0, 11);
+
+					element.parentNode.insertBefore(output, element);
+				})
+			};
+
+			window.addEventListener('DOMContentLoaded', function() {
+				initConfigHandlers();
+				initOutputValues();
+			}, false);
+
+			$('#config').addEventListener('reset', function() {
+				setTimeout(function() {
+					[].forEach.call(configReset, function(element) {
+						updateAnimation(element)
+					});
+				}, 0)
+			}, false)
+
+		</script>
+
+		<p><a href="http://sandbox.webpro.nl/">Home</a></p>
+
+		<a href="https://github.com/webpro/sandbox"><img style="position: absolute; top: 0; right: 0; border: 0;" src="./CSS 3D Transforms (Interactive Demo)_files/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub"></a>
+	
+
+</body></html>
