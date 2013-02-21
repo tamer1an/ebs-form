@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <!-- saved from url=(0065)http://sandbox.webpro.nl/css3/3d-transforms-interactive-demo.html -->
-<html lang="en" class=" -webkit-"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		
+<html lang="en" class=" -webkit-" xmlns="http://www.w3.org/1999/html"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="//code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"> </script>
+
 		<title>CSS 3D Transforms (Interactive Demo)</title>
 		<style type="text/css">
 
@@ -22,7 +23,7 @@
 
 			/* Canvas/stage styles */
 
-			#stage {
+			div[id^="stage"] {
 				width: 100%;
 				height: 400px;
 				background-color: #EEE;
@@ -34,7 +35,7 @@
 
 			/* Shape/face styles */
 
-			#shape {
+            div[id^="shape"] {
 				position: relative;
 				top: 100px;
 				margin: 0 auto;
@@ -143,6 +144,56 @@
 				<div class="face" style="-webkit-transform: matrix3d(0.707107, 0, 0.707107, 0, -0.000002, 1.000001, 0.000002, 0, -0.707101, 0.000003, 0.707101, 0, -197.989898, 0, 197.989899, 1); opacity: 0.7; -webkit-backface-visibility: visible;">8</div>
 			</div>
 		</div>
+
+        <div id="stage_1" style="-webkit-perspective: 800px; -webkit-perspective-origin-x: 50%; -webkit-perspective-origin-y: 50%;">
+            <div id="shape_1" style="-webkit-transform-style: preserve-3d; -webkit-animation: 8s; background-color: transparent;">
+                <div class="face" style="-webkit-transform: matrix3d(1, 0, 0, 0, 0, 1.000001, -0.000003, 0, 0, 0.000003, 1.000001, 0, 0, 0, 280, 1); opacity: 0.7; -webkit-backface-visibility: visible;">1</div>
+                <div class="face" style="-webkit-transform: matrix3d(0.707107, 0, -0.707107, 0, 0.000002, 1.000001, 0.000002, 0, 0.707101, 0.000003, 0.707101, 0, 197.989899, 0, 197.989898, 1); opacity: 0.7; -webkit-backface-visibility: visible;">2</div>
+                <div class="face" style="-webkit-transform: matrix3d(0, 0, -1, 0, -0.000003, 1.000001, 0, 0, 1.000001, 0.000003, 0, 0, 280, 0, 0, 1); opacity: 0.7; -webkit-backface-visibility: visible;">3</div>
+                <div class="face" style="-webkit-transform: matrix3d(-0.707107, 0, -0.707107, 0, 0.000002, 1.000001, -0.000002, 0, 0.707101, 0.000003, -0.707101, 0, 197.989898, 0, -197.989899, 1); opacity: 0.7; -webkit-backface-visibility: visible;">4</div>
+                <div class="face" style="-webkit-transform: matrix3d(-1, 0, 0, 0, 0, 1.000001, 0.000003, 0, 0, 0.000003, -1.000001, 0, 0, 0, -280, 1); opacity: 0.7; -webkit-backface-visibility: visible;">5</div>
+                <div class="face" style="-webkit-transform: matrix3d(-0.707107, 0, 0.707107, 0, -0.000002, 1.000001, -0.000002, 0, -0.707101, 0.000003, -0.707101, 0, -197.989899, 0, -197.989898, 1); opacity: 0.7; -webkit-backface-visibility: visible;">6</div>
+                <div class="face" style="-webkit-transform: matrix3d(0, 0, 1, 0, 0.000003, 1.000001, 0, 0, -1.000001, 0.000003, 0, 0, -280, 0, 0, 1); opacity: 0.7; -webkit-backface-visibility: visible;">7</div>
+                <div class="face" style="-webkit-transform: matrix3d(0.707107, 0, 0.707107, 0, -0.000002, 1.000001, 0.000002, 0, -0.707101, 0.000003, 0.707101, 0, -197.989898, 0, 197.989899, 1); opacity: 0.7; -webkit-backface-visibility: visible;">8</div>
+            </div>
+        </div>
+
+
+        <!--<div id="stage_2" style="-webkit-perspective: 800px; -webkit-perspective-origin-x: 50%; -webkit-perspective-origin-y: 50%;">-->
+            <!--<div id="shape_2" style="-webkit-transform-style: preserve-3d; -webkit-animation: 8s; background-color: transparent;">-->
+                <!--<div class="face" style="-webkit-transform: matrix3d(1, 0, 0, 0, 0, 1.000001, -0.000003, 0, 0, 0.000003, 1.000001, 0, 0, 0, 280, 1); opacity: 0.7; -webkit-backface-visibility: visible;">1</div>-->
+                <!--<div class="face" style="-webkit-transform: matrix3d(0.707107, 0, -0.707107, 0, 0.000002, 1.000001, 0.000002, 0, 0.707101, 0.000003, 0.707101, 0, 197.989899, 0, 197.989898, 1); opacity: 0.7; -webkit-backface-visibility: visible;">2</div>-->
+                <!--<div class="face" style="-webkit-transform: matrix3d(0, 0, -1, 0, -0.000003, 1.000001, 0, 0, 1.000001, 0.000003, 0, 0, 280, 0, 0, 1); opacity: 0.7; -webkit-backface-visibility: visible;">3</div>-->
+                <!--<div class="face" style="-webkit-transform: matrix3d(-0.707107, 0, -0.707107, 0, 0.000002, 1.000001, -0.000002, 0, 0.707101, 0.000003, -0.707101, 0, 197.989898, 0, -197.989899, 1); opacity: 0.7; -webkit-backface-visibility: visible;">4</div>-->
+                <!--<div class="face" style="-webkit-transform: matrix3d(-1, 0, 0, 0, 0, 1.000001, 0.000003, 0, 0, 0.000003, -1.000001, 0, 0, 0, -280, 1); opacity: 0.7; -webkit-backface-visibility: visible;">5</div>-->
+                <!--<div class="face" style="-webkit-transform: matrix3d(-0.707107, 0, 0.707107, 0, -0.000002, 1.000001, -0.000002, 0, -0.707101, 0.000003, -0.707101, 0, -197.989899, 0, -197.989898, 1); opacity: 0.7; -webkit-backface-visibility: visible;">6</div>-->
+                <!--<div class="face" style="-webkit-transform: matrix3d(0, 0, 1, 0, 0.000003, 1.000001, 0, 0, -1.000001, 0.000003, 0, 0, -280, 0, 0, 1); opacity: 0.7; -webkit-backface-visibility: visible;">7</div>-->
+                <!--<div class="face" style="-webkit-transform: matrix3d(0.707107, 0, 0.707107, 0, -0.000002, 1.000001, 0.000002, 0, -0.707101, 0.000003, 0.707101, 0, -197.989898, 0, 197.989899, 1); opacity: 0.7; -webkit-backface-visibility: visible;">8</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		<form id="config">
 
@@ -282,6 +333,11 @@
 		<script src="./CSS 3D Transforms (Interactive Demo)_files/lib.js"></script>
 
 		<script>
+            jQuery.noConflict();
+
+            jQuery(function() {
+                console.log(jQuery('[id^="shape"]').removeAttr('style'));
+            });
 
 			var configAll = $$('input[type=range], input[type=radio]');
 			var configRange = $$('input[type=range]');
@@ -408,13 +464,6 @@
 						updateAnimation(element)
 					});
 				}, 0)
-			}, false)
-
+			}, false);
 		</script>
-
-		<p><a href="http://sandbox.webpro.nl/">Home</a></p>
-
-		<a href="https://github.com/webpro/sandbox"><img style="position: absolute; top: 0; right: 0; border: 0;" src="./CSS 3D Transforms (Interactive Demo)_files/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub"></a>
-	
-
 </body></html>
