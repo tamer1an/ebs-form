@@ -1,1 +1,0 @@
-imp parfile=imp.ini

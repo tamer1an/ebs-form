@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<contactform> 
-   
-<person><name>Andrii</name><date>09.01.1984</date><email>tavr2007@gmail.com</email><phone/><comment>Hello world</comment><senddate>2</senddate></person>
-
-<person><name>test</name><date>09.01.1984</date><email>tavr2009@gmail.com</email><phone>+38 063 355 72 92</phone><comment/><senddate>2</senddate></person><person><name>Valery</name><date>12.05.1986</date><email>vst@ciklum.com</email><phone>+38 (091) 911-23-31</phone><comment>I am on test page</comment><senddate>2</senddate></person><person><name>qwerty</name><date>12.05.1986</date><email>weroiuywesd@skjd.re</email><phone/><comment/><senddate>2</senddate></person>
-<person><name>&#1044;&#1086;&#1084;&#1072;&#1096;&#1085;&#1080;&#1081; &#1076;&#1077;&#1082;&#1086;&#1088;</name><date>11.11.2009</date><email>ghhgfhg@jhbjh.ru</email><phone></phone><comment>llklkklkklklkklkk</comment><senddate>1</senddate></person></contactform>

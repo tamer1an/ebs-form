@@ -1,1 +1,0 @@
-exp parfile=exp.ini
