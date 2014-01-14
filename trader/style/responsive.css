@@ -1,0 +1,302 @@
+@charset "utf-8"; 
+/* iPad (landscape) ----------- */
+@media screen and (max-width:960px) {
+	#sa {		background-color: transparent!important; 	}
+	.promo-trigger,.bannerimage img,div[class^="thumbnail"],#triggers,#klm-language-selector,#saform,#myalogin,#klm-ftr,#klm-nav,#klm-nav-local-shop,div #breadcrumbs,#page-share-buttons {		display: none !important;	}
+
+	#anchorbutton-outerbg {
+		top: 0px !important;
+		margin-left: 24px !important;
+		width:95% !important;
+		min-width:  704px!important;
+	}
+	#anchorbutton-innerbg {		width: 97%!important;  min-width:  680px!important; }
+	#anchorbutton-innerbg .anchor1 {		height: 47px !important;		width: 22% !important;	}
+	#anchorbutton-innerbg .anchor2 {		height: 47px !important;		width: 20% !important; 	}
+	#anchorbutton-innerbg .anchor3 {		height: 47px !important;		width: 225px!important;	}
+	#anchorbutton-innerbg .anchor4 {		height: 47px !important;		width: 24%!important;	}
+	
+	.textonimageheaderblue span {				font-size: 60px !important; 	}
+	.textonimage h2.textonimageheader { 		font-size: 35px !important; 	}
+	.textonimage h2.textonimageheaderblue {	font-size: 45px !important;		}
+	.textonimage {
+		font-size: 19px !important;
+		left: 0px !important;
+		top: 0px !important;
+		width:700px;
+	}
+	.flight-offer #klm-col-1,.flight-offer #klm-col-2 {
+		clear: both !important;
+		width: 100% !important;
+		margin-left: 9px !important;
+		margin-bottom: 0px !important;
+	}
+	#klm-col-1 {		margin-top: 16px !important;	}
+	#klm-col-2 {		margin-top: 0px !important;	}
+	
+	.offer-box {		width: 94%;	}
+	.offer-box ul {		width: 100% !important; min-width: 631px!important;		}
+	.offer-box li {		width: 28% !important; margin-right: 33px!important;	}
+	
+	#promotional_tcm541-399337{
+		background: url("/euro_page/index_files/Voorb_rooftop_tcm541-399341.jpg") no-repeat 0px 0px;
+		width: 100%;
+		height: 100%;
+	
+		-webkit-background-size: 100% auto !important;
+		-moz-background-size: 100% auto !important;
+		background-size: 100% auto !important;
+	}
+	#promotional_tcm541-394223 {
+		background: url("/euro_page/index_files/fbtrigger_tcm541-396146.jpg") no-repeat 0px 0px;
+		width: 100%;
+		height: 100%;
+	
+		-webkit-background-size: 100% auto !important;
+		-moz-background-size: 100% auto !important;
+		background-size: 100% auto !important;
+	}
+	#promotional_tcm541-399337 a,#promotional_tcm541-394223 a {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+	div.extra-wide-trigger-border img {		display:none; 	}
+	div.extra-wide-trigger-border {
+		width: 48% !important;
+		float:left !important;
+		margin-right:4px !important;
+	}
+	#klm-body #offer-footer h1 {		font-size: 21px !important; 	}
+	#offer-footer ul  {
+		width: 771px !important;
+		clear: both !important;
+		float: left;
+	}
+	#offer-footer ul li {
+		font-size: 16px !important;
+		line-height: 55px;
+		height: 39px;
+		width: 257px !important;
+	}
+	.footerintro {
+		font-size: 14px !important;
+		float: left;
+		clear:both;
+	}
+	span.footerdest {
+		background:
+			url("http://www.klm.com/travel/generic/images/single-arrow-right_tcm169-187480.gif")
+			no-repeat scroll 100% 7px !important;
+		padding-right: 15px !important;
+	}
+	#klm-doc {		width: 100% !important;		min-width: 400px !important;	}
+}
+
+/* ipad (portraid) --------- */
+@media only screen and (max-width : 640px) {
+	.promo-trigger,#triggers,#klm-language-selector,#saform,#myalogin,#klm-ftr,#klm-nav,#klm-nav-local-shop,div #breadcrumbs,#page-share-buttons,.bannerimage img,div[class^="thumbnail"] {		display: none !important;	}
+	#sa {		background-color: none; 	}
+
+	#klm-body #offer-footer h1 {		font-size: 21px !important; 	}
+	#klm-branding,#klm-hdr {		padding: 0px !important;	}
+	#klm-hdr,#klm-branding {		padding-left: 33px;		padding-top: 7px;	}
+	
+	.anchorbutton {		font-size: 12px !important; 	}	
+	#anchorbutton-innerbg .anchor1 {		width: 96px !important;		height: 64px !important;	}
+	#anchorbutton-innerbg .anchor1 .anchorbutton,#anchorbutton-innerbg .anchor2 .anchorbutton,#anchorbutton-innerbg .anchor4 .anchorbutton{ margin-top:22px;}
+	#anchorbutton-innerbg .anchor3 .anchorbutton { margin-top:18px; }
+	
+	#anchorbutton-innerbg .anchor2 {	width: 105px !important; height: 64px !important;	}
+	#anchorbutton-innerbg .anchor3 {	width: 144px !important; height: 64px !important;	}
+	#anchorbutton-innerbg .anchor4 {	width: 112px !important; height: 64px !important;	}
+	#anchorbutton-innerbg {
+		min-width: 0px!important;
+		width: 463px !important;
+		height: 64px !important;
+		background:	url("an.gif") 0px 0px!important;
+	}
+	#anchorbutton-outerbg {
+		top: 0px !important;
+		margin-left: 40px !important;
+		min-width:  0px!important;
+		width: 487px !important;
+		height: 85px !important;
+	}
+	.textonimageheaderblue span {		font-size: 60px !important; 	}
+	.textonimage h2.textonimageheader {		font-size: 35px !important;	}
+	.textonimage h2.textonimageheaderblue {		font-size: 45px !important; 	}
+	.textonimage {
+		font-size: 19px !important;
+		left: 0px !important;
+		top: 0px !important;
+	}
+	.flight-offer #klm-col-1,.flight-offer #klm-col-2 {
+		clear: both !important;
+		width: 99% !important;
+		margin-left: 9px !important;
+		margin-bottom: 0px !important;
+	}
+	#klm-col-1 {		margin-top: 16px !important;	}
+	#klm-col-2 {		margin-top: 0px !important;	}
+	
+	.offer-box	{	width: 94%;	}
+	.offer-box ul{	width: 100% !important; min-width: 415px!important;		}
+	.offer-box li {   width: 47% !important; margin-right: 11px!important;}
+
+	div.extra-wide-trigger-border {	width: 504px !important;	margin-left: 18px!important;	}
+	#promotional_tcm541-399337{
+		background: url("/euro_page/index_files/Voorb_rooftop_tcm541-399341.jpg") no-repeat 0px 0px;
+		width: 100%;
+		height: 109%;
+	
+		-webkit-background-size:auto 100% !important;
+		-moz-background-size: 	auto 100% !important;
+		background-size: 		auto 100% !important;
+	}
+	#promotional_tcm541-394223 {
+		background: url("/euro_page/index_files/fbtrigger_tcm541-396146.jpg") no-repeat 0px 0px;
+		width: 100%;
+		height: 109%;
+	
+		-webkit-background-size:auto 100% !important;
+		-moz-background-size: 	auto 100% !important;
+		background-size: 		auto 100% !important;
+	}
+	#offer-footer ul li {
+		font-size: 16px !important;
+		line-height: 55px!important;
+		width: 289px!important;
+		height: 39px!important;
+	}
+	.footerintro {	font-size: 14px !important;	 }
+	span.footerdest {
+		background:
+			url("http://www.klm.com/travel/generic/images/single-arrow-right_tcm169-187480.gif")
+			no-repeat scroll 100% 7px !important;
+		padding-right: 15px !important;
+	}
+}	
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width : 480px) {
+	.promo-trigger,.bannerimage img,div[class^="thumbnail"],#triggers,#klm-language-selector,#saform,#myalogin,#klm-ftr,#klm-nav,#klm-nav-local-shop,div #breadcrumbs,#page-share-buttons {		display: none !important;	}
+		
+	.textonimageheaderblue span {				font-size: 50px !important; 	}
+	.textonimage h2.textonimageheader { 		font-size: 27px !important; 	}
+	.textonimage h2.textonimageheaderblue {	font-size: 33px !important;		}
+	
+	#anchorbutton-innerbg {		width: 393px !important;	}
+	#anchorbutton-outerbg {
+		margin-left: 12px !important;
+		margin-top: 153px !important;
+		width: 417px !important;
+	}
+	
+	.anchorbutton {		font-size: 11px !important;	}	
+	#anchorbutton-innerbg .anchor3 .anchorbutton,#anchorbutton-innerbg .anchor4 .anchorbutton, 
+	#anchorbutton-innerbg .anchor1 .anchorbutton,#anchorbutton-innerbg .anchor2 .anchorbutton{ margin-top:20px; }
+	
+	#anchorbutton-innerbg .anchor1 {	width: 75px  !important;}
+	#anchorbutton-innerbg .anchor2 {	width: 79px  !important; height: 64px !important;	}
+	#anchorbutton-innerbg .anchor3 {	width: 113px !important !important; height: 64px !important;	}
+	#anchorbutton-innerbg .anchor4 {	width: 86px  !important; height: 64px !important;	}
+	
+	#promotional_tcm541-399337{
+		background: url("/euro_page/index_files/Voorb_rooftop_tcm541-399341.jpg") no-repeat 0px 0px;
+		width: 100%;
+		height: 89%;
+	
+		-webkit-background-size: auto 100% !important;
+		-moz-background-size: auto 100% !important;
+		background-size: auto 100% !important;
+	}
+	#promotional_tcm541-394223 {
+		background: url("/euro_page/index_files/fbtrigger_tcm541-396146.jpg") no-repeat 0px 0px;
+		width: 100%;
+		height: 89%;
+	
+		-webkit-background-size: auto 100% !important;
+		-moz-background-size: auto 100% !important;
+		background-size: auto 100% !important;
+	}
+	#promotional_tcm541-399337 a,#promotional_tcm541-394223 a {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+	
+	.offer-box {		width: 91%;	}	
+	.offer-box li {		width: 47% !important;	}	
+	.offer-box ul {		min-width: 378px!important;	}
+	
+	#offer-footer ul li {		width: 251px!important;	}
+	#offer-footer span {		width: 391px;	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+	#klm-doc {			width: 100% !important;		min-width: 320px !important;	}
+	.klm-logo-cs img{	width: 245px !important;	}
+	
+	.flight-offer #klm-col-1, .flight-offer #klm-col-2 {
+		clear: both !important;
+		width: 114% !important;
+		margin-left: 18px !important;
+	}
+	.offer-box {		width: 67%;	}
+	.offer-box li {		width: 60% !important;	}
+	.offer-box ul {		min-width: 378px!important;	}
+	
+	.anchorbutton {		font-size: 10px !important;	}
+	#anchorbutton-innerbg {		width: 282px !important;	}
+	#anchorbutton-innerbg .anchor1 {	width: 63px  !important; }
+	#anchorbutton-innerbg .anchor2 {	width: 63px  !important; height: 64px !important;	}
+	#anchorbutton-innerbg .anchor3 {	width: 86px  !important; height: 64px !important;	}
+	#anchorbutton-innerbg .anchor4 {	width: 64px  !important; height: 64px !important;	}
+	#anchorbutton-outerbg {
+		margin-left: 0px !important;
+		width: 303px !important;
+		margin-top: 91px !important;
+	}
+
+	div.extra-wide-trigger-border {		width: 254px !important; height: 70px!important; margin-top:14px!important;	 margin-left: 3px!important;}
+	.textonimageheaderblue span {				font-size: 30px !important; 	}
+	.textonimage h2.textonimageheader { 		font-size: 17px !important; 	}
+	.textonimage h2.textonimageheaderblue {	font-size: 23px !important;		}
+	
+	
+	.bannerimage {		margin-bottom:0px !important;		height: 150px !important;	}
+	#promotional_tcm541-399337{
+		background: url("/euro_page/index_files/Voorb_rooftop_tcm541-399341.jpg") no-repeat 0px 0px;
+		width: 100%;
+		height: 89%;
+	
+		-webkit-background-size:100% auto !important;
+		-moz-background-size: 	100% auto !important;
+		background-size: 		100% auto !important;
+	}
+	#promotional_tcm541-394223 {
+		background: url("/euro_page/index_files/fbtrigger_tcm541-396146.jpg") no-repeat 0px 0px;
+		width: 100%;
+		height: 89%;
+	
+		-webkit-background-size:100% auto  !important;
+		-moz-background-size: 	100% auto  !important;
+		background-size: 		100% auto  !important;
+	}
+	
+	.footerintro {		font-size: 12px !important;	}
+	#offer-footer ul {		width: 282px !important;		padding-bottom: 25px !important;	}
+	#offer-footer ul li {		width: 251px!important;		height: 31px!important;		font-size: 15px !important; 	}
+	#offer-footer span {		width: 292px;	}
+	#klm-body #offer-footer h1 {		font-size: 17px !important;	}
+}
+
+/*
+	img {	  max-width: 100%;	}
+
+	@media only screen and (min-device-width: 640px) and (max-device-width: 960px) { }
+	@media only screen and (-webkit-min-device-pixel-ratio : 1.5) and (orientation : landscape), only screen and (min-device-pixel-ratio : 1.5) and (orientation : landscape) { }
+	@media only screen and (-webkit-min-device-pixel-ratio : 1.5) and (orientation : portrait), only screen and (min-device-pixel-ratio : 1.5) and (orientation : portrait) { }
+*/
