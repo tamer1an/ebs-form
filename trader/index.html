@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en"  itemscope itemtype="http://schema.org/TradeAction"> <!-- manifest="offline/app.manifest" -->
 <head> 
   <meta charset="utf-8">
@@ -55,21 +55,21 @@
         </header>
         <section data-role="content">
             <form>
-                <fieldset>
+                <fieldset id="settings">
                     <legend>Settings</legend>
                     <div> Data refresh time: <input type="time" value="00:01"> </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset id="rates">
                     <legend>Rates</legend>
                     <div> EURUSD  <input value="Remove" type="button"/> </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset id="symbols">
                      <legend>Symbols</legend>
-                     <div> <p>EURUSD</p>  <input value="Add" type="button"/> </div>
-                     <div> <p>EURGBP</p>  <input value="Add" type="button"/> </div>
-                     <div> <p>EURRUP</p>  <input value="Add" type="button"/> </div>
+                     <div> <p>EURUSD</p>  <input title="Add to refresh list" value="Add" type="button"/> </div>
+                     <div> <p>EURGBP</p>  <input title="Add to refresh list" value="Add" type="button"/> </div>
+                     <div> <p>EURRUP</p>  <input title="Add to refresh list" value="Add" type="button"/> </div>
                      <div>
                          <select data-role="currencyList">
                              <option>Not selected</option>
@@ -81,9 +81,9 @@
                          <input value="Add" type="button"/> </div>
                 </fieldset>
 
-
             </form>
         </section>
+        
     </section>
 
 </body>
