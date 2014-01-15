@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en" manifest="offline/app.manifest" itemscope itemtype="http://schema.org/TradeAction">
+<html lang="en"  itemscope itemtype="http://schema.org/TradeAction"> <!-- manifest="offline/app.manifest" -->
 <head> 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -28,36 +28,63 @@
   <!-- ICONS <base href="http://images/" target="_blank" /> --> 
   <link href='favicon.ico' rel='shortcut icon' type='image/x-icon'/>
   
-  <link rel="apple-touch-startup-image" 				   href="images/load_screen.png" /> 
-  <link rel="apple-touch-icon" 			   sizes="72x72"   href="images/touch-icon-ipad.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/touch-icon-iphone4.png" />
+  <link rel="apple-touch-startup-image" 				   href="images/logo.png" />
+  <link rel="apple-touch-icon" 			   sizes="72x72"   href="images/logo.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/logo.png" />
   
   <!-- CSS reset -->
   <!-- my light reset & base CSS classes defenition -->
-  <link href="style/base_style.css" 	rel="stylesheet" type="text/css">
+  <link href="style/reset.css" 	rel="stylesheet" type="text/css">
   <!-- CSS for printing page-->
   <link  href="style/print.css" 		rel="stylesheet" type="text/css" media="print"> 
   <!-- PAGE CSS -->
-  <link  href="style/style.css" 		rel="stylesheet" type="text/css" media="screen">		 
+  <link  href="style/style.css" 		rel="stylesheet" type="text/css" media="screen">
+
+  <script  src="js/app.js"></script>
+
+    <!--language="JavaScript1.8" -->
 </head>
 
 <body> 
 
-  <section data-role="page">
-	<header data-role="header">
-		<p> Our dinamic home page </p>
-	</header>
-	
-	<section class="pb15" data-role="content">
-		
-		
-	</section>
-	
-	<footer data-role="footer"> 
-		
-		
-	</footer>
-  </section>
- 
+
+
+    <section data-role="module">
+        <header data-role="header">
+            <h1> Realtime exchange rates </h1>
+        </header>
+        <section data-role="content">
+            <form>
+                <fieldset>
+                    <legend>Settings</legend>
+                    <div> Data refresh time: <input type="time" value="00:01"> </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Rates</legend>
+                    <div> EURUSD  <input value="Remove" type="button"/> </div>
+                </fieldset>
+
+                <fieldset>
+                     <legend>Symbols</legend>
+                     <div> <p>EURUSD</p>  <input value="Add" type="button"/> </div>
+                     <div> <p>EURGBP</p>  <input value="Add" type="button"/> </div>
+                     <div> <p>EURRUP</p>  <input value="Add" type="button"/> </div>
+                     <div>
+                         <select data-role="currencyList">
+                             <option>Not selected</option>
+                         </select>/
+                         <select data-role="currencyList">
+                             <option>Not selected</option>
+                         </select>
+
+                         <input value="Add" type="button"/> </div>
+                </fieldset>
+
+
+            </form>
+        </section>
+    </section>
+
 </body>
 </html>
