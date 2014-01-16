@@ -1,74 +1,79 @@
-function addEventHandler(oNode, evt, oFunc, bCaptures){
-	if (typeof(window.event) != "undefined")
-		oNode.attachEvent("on"+evt, oFunc);
-	else
-		oNode.addEventListener(evt, oFunc, bCaptures);
+
+//Object factory
+var Factory = function(){
+    this.objType = {};
+    this.createNewObj = function (obj) {
+        obj = (typeof(window[obj])=='object') ? window[obj] : { error: 'no such class name in global space' };
+
+        this.setObjType(obj);
+
+        var func = this.getObjConstructor();
+        for (var prop in obj){
+            func.prototype[prop] = obj[prop];
+        }
+
+        return new func();
+    };
+    this.getObjType = function(){
+        return this.objType;
+    };
+    this.setObjType = function(obj){
+        this.objType = obj
+    };
+    this.getObjConstructor = function(obj){
+        return this.getObjType().constructor;
+    }
+};
+
+//Add event to list
+function addEventHandler(oNode, evt, oFunc,bCaptures){
+    if (oNode.length>0) {
+        for (var idx in oNode){
+            if (typeof(oNode[idx]) == "object")
+                oNode[idx].addEventListener(evt, oFunc, bCaptures);
+        }
+        return;
+    }
+   oNode.addEventListener(evt, oFunc, bCaptures);
 }
 
+//Elem Has Attribute
+function elemHasAttribute(elementName,attribute){
+	var element = document.createElement(elementName);
+	return attribute in element;
+};	
 
 
-
-
-// wResize = {
-    // mediaSizes: new Array(),
-
-    // initSizes: function() {
-        // this.mediaSizes.push({ clMinW: 800, clMaxW: -1, cls: 'screen640' });
-        // this.mediaSizes.push({ clMinW: 480, clMaxW: 800, cls: 'screen640' });
-        // this.mediaSizes.push({ clMinW: -1, clMaxW: 480, cls: 'screen480' });
-    // },
-
-    // setStyleForSize: function() {
-        // var clientW = document.documentElement.clientWidth;
-        // for (i = 0; i < this.mediaSizes.length; i++) {
-            // var oSize = this.mediaSizes[i];
-            // if (oSize.clMinW == -1) {
-                // if (clientW <= oSize.clMaxW) {
-                    // document.getElementById('title').className = oSize.cls;
-                    // return;
-                // }
-            // }
-            // if (oSize.clMaxW == -1) {
-                // if (clientW > oSize.clMinW) {
-                    // document.getElementById('title').className = oSize.cls;
-                    // return;
-                // }
-            // }
-            // if (clientW > oSize.clMinW && clientW <= oSize.clMaxW) {
-                // document.getElementById('title').className = oSize.cls;
-                // return;
-            // }
-        // }
-    // }
-// }; 
-
-// addEventHandler(window, "load", function() {
-	// wResize.initSizes();
-	// wResize.setStyleForSize();
-// },false);
-
-// addEventHandler(window, "resize", function() {
-	// wResize.initSizes();
-	// wResize.setStyleForSize();
-// },false);
+//Include js files function
+function include(file,scriptStack) {
+	var script = document.createElement('script');
+	script.src = file;
+	script.type = 'text/javascript';
 	
-
-	
-/* light version
- * var page = document.getElementById('page')
- * 
-	function resize(){ 
-		if(page.offsetWidth <= 439){
-			
-		} else {
-				
-		}
-	}
+	if(scriptStack == 'async' && elemHasAttribute('script','async'))
+		script.async = true;
+	else if(scriptStack == 'defer')
+		script.defer = true;
 		
-	addEventHandler(window,'resize',resize,false);
-	
-	function getEventTarget(e) {
-		if (window.event) return window.event.srcElement;
-		else return e.target;
-	}
-*/
+	document.getElementsByTagName('head')[0].appendChild(script);
+	debuggStack({'msg':'script.js(47): include '+file});
+};	
+
+//Include js file with callback function
+function includeWithCallBack(file, callback) {
+	var script = document.createElement('script');
+	script.src = file;
+	script.type = 'text/javascript';
+	document.getElementsByTagName('head')[0].appendChild(script);
+		
+	script.onreadystatechange = function() {
+		if(script.readyState == "complete" || script.readyState=="loaded") {
+			script.onreadystatechange = false;
+			callback;
+		} else {
+			script.onload = function() {
+			callback;
+			};
+		}
+	};
+};

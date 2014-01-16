@@ -5,42 +5,6 @@ window.onload = function(){
     window.App = f.createNewObj('CurrecyApp');
 };
 
-var Factory = function(){
-    this.objType = {};
-    this.createNewObj = function (obj) {
-        obj = (typeof(window[obj])=='object') ? window[obj] : { error: 'no such class name in global space' };
-
-        this.setObjType(obj);
-
-        var func = this.getObjConstructor();
-        for (var prop in obj){
-            func.prototype[prop] = obj[prop];
-        }
-
-        return new func();
-    };
-    this.getObjType = function(){
-        return this.objType;
-    };
-    this.setObjType = function(obj){
-        this.objType = obj
-    };
-    this.getObjConstructor = function(obj){
-        return this.getObjType().constructor;
-    }
-};
-
-function addEventHandler(oNode, evt, oFunc,bCaptures){
-    if (oNode.length>0) {
-        for (var idx in oNode){
-            if (typeof(oNode[idx]) == "object")
-                oNode[idx].addEventListener(evt, oFunc, bCaptures);
-        }
-        return;
-    }
-   oNode.addEventListener(evt, oFunc, bCaptures);
-}
-
 CurrecyApp = {
     currencyList:[],
     selectors:{
