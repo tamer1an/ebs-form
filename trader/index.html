@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en"  itemscope itemtype="http://schema.org/TradeAction"> <!-- manifest="offline/app.manifest" -->
 <head> 
   <meta charset="utf-8">
@@ -62,23 +62,24 @@
 
                 <fieldset id="rates">
                     <legend>Rates</legend>
-                    <div> EURUSD  <input value="Remove" type="button"/> </div>
+                    <div> <p>EURUSD</p>  <input data-role="removeSymbol" data-symbol="EURUSD" value="Remove" type="button"/> </div>
+                    <div> <p>EURGBP</p>  <input data-role="removeSymbol" data-symbol="EURGBP" value="Remove" type="button"/> </div>
                 </fieldset>
 
                 <fieldset id="symbols">
                      <legend>Symbols</legend>
-                     <div> <p>EURUSD</p>  <input title="Add to refresh list" value="Add" type="button"/> </div>
-                     <div> <p>EURGBP</p>  <input title="Add to refresh list" value="Add" type="button"/> </div>
-                     <div> <p>EURRUP</p>  <input title="Add to refresh list" value="Add" type="button"/> </div>
+                     <div> <p>EURUSD</p>  <input data-role="addSymbol" data-symbol="EURUSD" title="Add to refresh list" value="Add" type="button"/> </div>
+                     <div> <p>EURGBP</p>  <input data-role="addSymbol" data-symbol="EURGBP" title="Add to refresh list" value="Add" type="button"/> </div>
+                     <div> <p>EURRUP</p>  <input data-role="addSymbol" data-symbol="EURRUP" title="Add to refresh list" value="Add" type="button"/> </div>
                      <div>
-                         <select data-role="currencyList">
-                             <option>Not selected</option>
+                         <select data-role="currencyList" required="required">
+                             <option value="">Not selected</option>
                          </select>/
-                         <select data-role="currencyList">
-                             <option>Not selected</option>
+                         <select data-role="currencyList" required="required">
+                             <option value="">Not selected</option>
                          </select>
 
-                         <input value="Add" type="button"/> </div>
+                         <input data-role="addSymbol" data-symbol="CUSTOM" value="Add" type="button"/> </div>
                 </fieldset>
 
             </form>
