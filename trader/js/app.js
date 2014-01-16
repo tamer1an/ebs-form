@@ -1,5 +1,10 @@
 var cList = "AED;AFN;ARS;AUD;AZN;BBD;BDT;BGN;BHD;BOB;BRL;BSD;BWP;BZD;CAD;CDF;CHF;CLP;CNY;COP;CRC;CVE;CZK;DKK;DOP;DZD;EEK;EGP;ERN;ETB;EUR;FJD;GBP;GHS;GTQ;GYD;HKD;HNL;HRK;HTG;HUF;IDR;ILS;INR;IQD;ISK;JMD;JOD;JPY;KES;KHR;KMF;KRW;KWD;KZT;LBP;LKR;LTL;LVL;LYD;MAD;MKD;MRO;MXN;MYR;MZN;NAD;NGN;NIO;NOK;NPR;NZD;OMR;PAB;PEN;PHP;PKR;PLN;PYG;QAR;RON;RSD;RUB;SAR;SEK;SGD;SRD;THB;TMT;TND;TRY;TTD;TWD;UAH;UGX;USD;UYU;UZS;VEF;VND;XAF;XDR;XOF;XPF;YER;ZAR;ZMW".split(';');
 
+window.onload = function(){
+    var f = new Factory();
+    window.App = f.createNewObj('CurrecyApp');
+};
+
 var Factory = function(){
     this.objType = {};
     this.createNewObj = function (obj) {
@@ -36,7 +41,6 @@ function addEventHandler(oNode, evt, oFunc,bCaptures){
    oNode.addEventListener(evt, oFunc, bCaptures);
 }
 
-
 CurrecyApp = {
     currencyList:[],
     selectors:{
@@ -49,12 +53,12 @@ CurrecyApp = {
                    'input[data-symbol="EURRUP"][data-role="',action,'Symbol"]'].join("");
         }
     },
+    dqAll : function (sel){
+        return document.querySelectorAll(sel)
+    },
     constructor:function(){
         this.setCurrencyList(window.cList);
         this.init();
-    },
-    dqAll : function (sel){
-        return document.querySelectorAll(sel)
     },
     init : function(){
         this.buildSymbolSelect();
@@ -69,29 +73,20 @@ CurrecyApp = {
             currSelectList[i].appendChild(this.getCurrencyListFragment());
         }
     },
-    addAppHandlers : function(){
-        addEventHandler(this.dqAll(this.selectors.addSymbol),'click',this.addSymbolRecord, true);
-        addEventHandler(this.dqAll(this.selectors.removeSymbol),'click',this.removeSymbolRecord, true);
+    addAppHandlers : function(obj){
+        addEventHandler((typeof(obj)=='undefined')?this.dqAll(this.selectors.addSymbol):obj,'click',this.addSymbolRecord, true);
+        addEventHandler((typeof(obj)=='undefined')?this.dqAll(this.selectors.removeSymbol):obj,'click',this.removeSymbolRecord, true);
     },
     disableSymbolSet: function(){
-        var dissabledSet,alreadyExist, stringBuffer = [];
+        var item,alreadyExist;
 
         alreadyExist = this.dqAll(this.selectors.ratesSymbolSet('remove'));
         for (var idx = 0; idx < alreadyExist.length; idx++){
-             item = document.querySelector('#symbols input[data-symbol="'+alreadyExist[idx].dataset.symbol+'"]')
+            item = document.querySelector('#symbols input[data-symbol="'+alreadyExist[idx].dataset.symbol+'"]');
 
-            if(stringBuffer.length>0) stringBuffer.push(',');
-            stringBuffer.push('input[data-symbol="');
-            stringBuffer.push(alreadyExist[idx].dataset.symbol);
-            stringBuffer.push('"][data-role="addSymbol"]');
-
-//            if(!==null){
-//                document.querySelector('#symbols input[data-symbol="'+alreadyExist[idx].dataset.symbol+'"]').setAttribute('disabled',true);
-//            }
-        }
-        dissabledSet = this.dqAll(stringBuffer.join(""));
-        for (var index = 0; index < dissabledSet.length; index++){
-            dissabledSet[index].setAttribute('disabled',true);
+            if(item!==null){
+                item.setAttribute('disabled',true);
+            }
         }
     },
     addSymbolRecord:function(evt){
@@ -121,9 +116,9 @@ CurrecyApp = {
         }
 
         function generateRatesItem(symbol){
-            var div = document.createElement('div'),
-                p = document.createElement('p'),
-                input = document.createElement('input'),
+            var div      = document.createElement('div'),
+                p        = document.createElement('p'),
+                input    = document.createElement('input'),
                 fragment = document.createDocumentFragment();
 
             p.innerHTML = symbol;
@@ -134,9 +129,10 @@ CurrecyApp = {
             input.setAttribute('value',"Remove");
             input.setAttribute('type' ,"button");
 
+            window.App.addAppHandlers(input);
+
             div.appendChild(p);
             div.appendChild(input);
-
             fragment.appendChild(div);
 
             document.getElementById('rates').appendChild(fragment);
@@ -168,20 +164,6 @@ CurrecyApp = {
         }
         return fragment;
     }
-};
-
-window.onload = function(){
-
-    
-
-
-
-
-
- 
-  var f   = new Factory(),
-      App = f.createNewObj('CurrecyApp');
-
 };
 
 

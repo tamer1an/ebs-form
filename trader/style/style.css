@@ -1,3 +1,17 @@
+body > section[data-role="module"] input[type="button"]:disabled {
+    background: lightsteelblue;
+}
+body > section[data-role="module"] input[type="button"]:hover:enabled {
+    background: royalblue;
+}
+body > section[data-role="module"] input[type="button"] {
+    background: dodgerblue;
+    border: none;
+    padding: 6px 9px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+}
 body > section[data-role="module"] {
     padding: 1%;
     width: 80%;
@@ -27,7 +41,7 @@ section[data-role="content"] > form > fieldset > div  {
     width: 100%;
     float:left;
     padding: 2% 0 2% 2%;
-    border-top: 1px solid gray;
+    border-top: 1px solid lavender;
 }
 section[data-role="content"] > form > fieldset > div > p {
     float: left;
@@ -37,7 +51,14 @@ section[data-role="content"] > form > fieldset > div > input {
     float: right;
     margin-right: 1%;
 }
-
+#rates{
+    position: absolute;
+}
+#settings , #symbols {
+    clear: both;
+    display: block;
+    float: left;
+}
 
 
 
