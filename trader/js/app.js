@@ -118,10 +118,15 @@ CurrecyApp = {
         function generateRatesItem(symbol){
             var div      = document.createElement('div'),
                 p        = document.createElement('p'),
+                pAsk     = document.createElement('p'),
+                pBid     = document.createElement('p'),
                 input    = document.createElement('input'),
                 fragment = document.createDocumentFragment();
 
-            p.innerHTML = symbol;
+            p.innerHTML    = symbol;
+            pAsk.innerHTML = '12.33';
+            pBid.innerHTML = '56.44';
+            pBid.className = 'ml10';
 
             input.setAttribute('data-role',"removeSymbol");
             input.setAttribute('data-symbol',symbol);
@@ -132,6 +137,8 @@ CurrecyApp = {
             window.App.addAppHandlers(input);
 
             div.appendChild(p);
+            div.appendChild(pAsk);
+            div.appendChild(pBid);
             div.appendChild(input);
             fragment.appendChild(div);
 
