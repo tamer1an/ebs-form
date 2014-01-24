@@ -1,19 +1,19 @@
 ﻿<!DOCTYPE html>
-<html lang="en"  itemscope manifest="offline/app.manifest"  itemtype="http://schema.org/TradeAction">
+<html lang="en"  itemscope itemtype="http://schema.org/AggregateOffer"> <!--manifest="offline/app.manifest"-->
 <head> 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="author" content="Developed by Trybynenko Andrii">
-  <meta name="application-name" content="Application"/>
-  <title>Forex</title>
+  <meta name="author" content="Andrii Trybynenko">
+  <meta name="application-name" content="Everyplay videos"/>
+  <title>Everyplay videos</title>
   
   <!-- SOCIAl & SEO DATA -->
-  <meta itemprop="name" 			content="Forex">
-  <meta itemprop="description"  	content="Forex calculator" >
+  <meta itemprop="name" 			content="Everyplay videos">
+  <meta itemprop="description"  	content="Everyplay videos web page" >
   <meta itemprop="image" 			content="logo.png">	
   
-  <meta property="og:title" 		content="Forex"/>
-  <meta property="og:description" 	content="Forex calculator"/>
+  <meta property="og:title" 		content="Everyplay videos"/>
+  <meta property="og:description" 	content="Everyplay videos web page"/>
   <meta property="og:image" 		content="favicon.ico"/>
   <meta property="og:type"   		content="Application"> 
   <meta property="og:url" 			content="/"/>
@@ -47,47 +47,10 @@
 <body>
     <section class="unselectable" data-role="module">
         <header data-role="header">
-            <h1 class="unselectable"> Realtime exchange rates </h1>
+            <h1 class="unselectable">Everyplay videos </h1>
         </header>
         <section data-role="content">
-            <form>
-                <fieldset id="settings">
-                    <legend>Settings</legend>
-                    <div> Data refresh time: <input type="time" value="00:01"> </div>
-                </fieldset>
 
-                <fieldset id="rates">
-                    <legend>Rates</legend>
-                    <header>
-                        <div>
-                            <span>Symbol</span><span>Ask</span><span>Bid</span>
-                        </div>
-                    </header>
-                    <div> <p>EURUSD</p>  <p>12.33</p> <p class="ml10">11.33</p>  <input data-role="removeSymbol" data-symbol="EURUSD" value="Remove" type="button"/> </div>
-                </fieldset>
-
-                <fieldset id="symbols">
-                     <legend>Symbols</legend>
-                     <div>
-                         <p>EURUSD</p>
-                         <input data-role="addSymbol" data-symbol="EURUSD" title="Add to refresh list" value="Add" type="button"/> </div>
-                     <div>
-                         <p>EURGBP</p>
-                         <input data-role="addSymbol" data-symbol="EURGBP" title="Add to refresh list" value="Add" type="button"/> </div>
-                     <div>
-                         <p>EURRUP</p>
-                         <input data-role="addSymbol" data-symbol="EURRUP" title="Add to refresh list" value="Add" type="button"/> </div>
-                     <div>
-                         <select data-role="currencyList" required="required">
-                             <option value="">Not selected</option>
-                         </select>/
-                         <select data-role="currencyList" required="required" title="Reqired">
-                             <option value="">Not selected</option>
-                         </select>
-
-                         <input data-role="addSymbol" data-symbol="CUSTOM" value="Add" type="button"/> </div>
-                </fieldset>
-            </form>
         </section>
     </section>
 </body>

@@ -1,20 +1,3 @@
-select:hover:invalid{
-    border: 1px solid red !important;
-}
-body > section[data-role="module"] input[type="button"]:disabled {
-    background: lightsteelblue;
-}
-body > section[data-role="module"] input[type="button"]:hover:enabled {
-    background: royalblue;
-}
-body > section[data-role="module"] input[type="button"] {
-    background: dodgerblue;
-    border: none;
-    padding: 6px 9px;
-    border-radius: 4px;
-    font-weight: bold;
-    color: white;
-}
 body > section[data-role="module"] {
     padding: 1%;
     width: 80%;
@@ -25,63 +8,6 @@ body > section[data-role="module"] {
 header h1 {
     text-align: center;
     font-size: 180%;
-}
-
-section[data-role="content"] > form > fieldset {
-    width: 43%;
-    display: inline-block;
-    padding: 2%;
-    margin: 1%;
-}
-
-section[data-role="content"] > form > fieldset > legend{
-    font-size: 14pt;
-    font-weight: bold;
-}
-
-section[data-role="content"] > form > fieldset > div  {
-    width: 100%;
-    float:left;
-    padding: 2% 0 2% 2%;
-    border-top: 1px solid lavender;
-    min-width: 270px;
-}
-section[data-role="content"] > form > fieldset > div > p {
-    float: left;
-    margin-top: 1%;
-    -webkit-user-select: initial;
-    -khtml-user-select: initial;
-    -moz-user-select: initial;
-    -o-user-select: initial;
-    user-select: initial;
-}
-section[data-role="content"] > form > fieldset > div > input {
-    float: right;
-    margin-right: 1%;
-}
-#rates{
-    position: absolute;
-}
-#settings , #symbols {
-    clear: both;
-    display: block;
-    float: left;
-}
-#rates > div{
-    display: flex;
-    justify-content: space-between;
-}
-#rates > header {
-    width: 100%;
-    float:left;
-    padding: 2% 0 2% 2%;
-    border-top: 1px solid lavender;
-    font-weight: bold;
-}
-#rates > header > div{
-    width: 66%;
-    display: flex;
-    justify-content: space-between;
 }
 
 .selectable{
@@ -98,6 +24,6 @@ section[data-role="content"] > form > fieldset > div > input {
     -o-user-select: none;
     user-select: none;
 }
-.ml10{
-    margin-left: 10px;
+select:hover:invalid{
+    border: 1px solid red !important;
 }
