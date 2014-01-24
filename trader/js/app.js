@@ -1,13 +1,10 @@
 window.onload = function(){
     var f = new Factory();
-    window.App = f.createNewObj('CurrecyApp');
+    window.App = f.createNewObj('VideoApp');
 };
 
 
-
-
-
-CurrecyApp = {
+VideoApp = {
     URL: 'https://everyplay.com/api/videos?',
     client_id:'336d586b6e1b5e4a0f9eaa48e7e697d8cd51db40',
     defaultVideosQuery:{
@@ -18,12 +15,15 @@ CurrecyApp = {
     selectors:{
 
     },
-    createGETString:function(options){
-        var requestString = '';
-        for (var item in options){
-            requestString += [item,'=',options[item],'&'].join("")
-        }
-        return requestString;
+    extend:'RequestFactory',
+    getDefaultVideosQuery:function(){
+        return this.defaultVideosQuery;
+    },
+    getClientId:function(){
+        return this.client_id;
+    },
+    getURL:function(options){
+        return this.URL+options;
     },
     dqAll : function (sel){
         return document.querySelectorAll(sel);
@@ -37,24 +37,17 @@ CurrecyApp = {
 
         this.getVideosJSON(options)
     },
-    getURL:function(options){
-       return this.URL+options;
-    },
     getVideosJSON:function(options){
-        var strParams = this.createGETString(options);
-        this.requestGET(strParams,function(txt){
+        this.requestGET(options,function(txt){
             alert(txt);
         });
-    },
-    getDefaultVideosQuery:function(){
-        return this.defaultVideosQuery;
-    },
-    getClientId:function(){
-        return this.client_id;
-    },
+    }
+};
 
+RequestFactory = {
     requestGET:function(options,callback){
-        var xmlhttp = this.requestStart(options,function() {
+        var strParams = this.createGETString(options);
+        var xmlhttp = this.requestStart(strParams,function() {
             if (xmlhttp.readyState == 4) {
                 if(xmlhttp.status == 200) {
                     callback(xmlhttp.responseText);
@@ -85,5 +78,12 @@ CurrecyApp = {
             xmlhttp = new XMLHttpRequest();
         }
         return xmlhttp;
-    }
+    },
+    createGETString:function(options){
+        var requestString = '';
+        for (var item in options){
+            requestString += [item,'=',options[item],'&'].join("")
+        }
+        return requestString;
+    },
 };

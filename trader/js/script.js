@@ -2,16 +2,22 @@
 //Object factory
 var Factory = function(){
     this.objType = {};
-    this.createNewObj = function (obj) {
+    this.createNewObj = function (obj) { debugger
         obj = (typeof(window[obj])=='object') ? window[obj] : { error: 'no such class name in global space' };
 
         this.setObjType(obj);
 
         var func = this.getObjConstructor();
+
+        if (obj.extend){
+            var f = new Factory();
+            func.prototype = f.createNewObj(obj.extend);
+        }
+
         for (var prop in obj){
             func.prototype[prop] = obj[prop];
         }
-        //TODO: Extend functionality
+
         return new func();
     };
     this.getObjType = function(){
@@ -21,7 +27,7 @@ var Factory = function(){
         this.objType = obj
     };
     this.getObjConstructor = function(obj){
-        return this.getObjType().constructor;
+        return this.getObjType().constructor || function(){};
     }
 };
 
@@ -36,9 +42,9 @@ function addEventHandler(oNode, evt, oFunc,bCaptures){
     }
    oNode.addEventListener(evt, oFunc, bCaptures);
 
-//if (typeof(window.event) != "undefined")
-//oNode.attachEvent("on"+evt, oFunc);
-
+    //TODO: support ie
+    //if (typeof(window.event) != "undefined")
+    //oNode.attachEvent("on"+evt, oFunc);
 }
 
 //Elem Has Attribute
