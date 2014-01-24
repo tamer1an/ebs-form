@@ -4,10 +4,30 @@ body > section[data-role="module"] {
     margin: 0 auto;
     font-family: Arial, sans-serif;
 }
-
 header h1 {
     text-align: center;
     font-size: 180%;
+}
+footer[data-role="single-video"] > video {
+    width: 100%;
+}
+footer[data-role="single-video"] {
+    padding: 10px;
+}
+section[data-role="content"] div {
+    width: 100%;
+    float: left;
+    padding-top: 10px;
+}
+#videos span{
+    max-width: 234px;
+    float: left;
+}
+#videos div p,#videos div img{
+    float: left;
+}
+#videos div img{
+    padding-right: 10px;
 }
 
 .selectable{
@@ -26,4 +46,10 @@ header h1 {
 }
 select:hover:invalid{
     border: 1px solid red !important;
+}
+.hidden{
+    display: none;
+}
+.r{
+    float: right;
 }
