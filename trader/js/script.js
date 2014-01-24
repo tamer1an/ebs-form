@@ -11,7 +11,7 @@ var Factory = function(){
         for (var prop in obj){
             func.prototype[prop] = obj[prop];
         }
-
+        //TODO: Extend functionality
         return new func();
     };
     this.getObjType = function(){
