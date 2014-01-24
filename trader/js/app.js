@@ -39,12 +39,36 @@ VideoApp = {
     },
     getVideosJSON:function(options){
         this.requestGET(options,function(txt){
-            alert(txt);
+            App.insertVideo(JSON.parse(txt));
         });
+    },
+    insertVideo:function(arr){
+        var div, p, img,
+            fragment = document.createDocumentFragment();
+
+           for(var i=0; i<arr.length; i++){
+              div = document.createElement('div');
+              p   = document.createElement('p');
+              img = document.createElement('img');
+
+              img.setAttribute('src',arr[i].thumbnail_url);
+              p.innerHTML = ['<b>',arr[i].title ,'</b>','<b>', arr[i].user.username ,'</b>'].join("")
+              div.appendChild(img);
+              div.appendChild(p);
+
+              fragment.appendChild(div);
+           }
+
+            debugger;
+           document.getElementById('content').appendChild(fragment);
+
     }
 };
 
 RequestFactory = {
+    constructor:function(){
+
+    },
     requestGET:function(options,callback){
         var strParams = this.createGETString(options);
         var xmlhttp = this.requestStart(strParams,function() {
@@ -85,5 +109,5 @@ RequestFactory = {
             requestString += [item,'=',options[item],'&'].join("")
         }
         return requestString;
-    },
+    }
 };

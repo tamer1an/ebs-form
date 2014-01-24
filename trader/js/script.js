@@ -1,8 +1,9 @@
 
 //Object factory
 var Factory = function(){
+    this.constructor=function(){};
     this.objType = {};
-    this.createNewObj = function (obj) { debugger
+    this.createNewObj = function (obj) {
         obj = (typeof(window[obj])=='object') ? window[obj] : { error: 'no such class name in global space' };
 
         this.setObjType(obj);
@@ -24,10 +25,11 @@ var Factory = function(){
         return this.objType;
     };
     this.setObjType = function(obj){
+        //obj.constructor = obj.constructor?obj.constructor:function(){};
         this.objType = obj
     };
     this.getObjConstructor = function(obj){
-        return this.getObjType().constructor || function(){};
+        return this.getObjType().constructor;
     }
 };
 
