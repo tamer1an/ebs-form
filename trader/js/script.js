@@ -35,6 +35,10 @@ function addEventHandler(oNode, evt, oFunc,bCaptures){
         return;
     }
    oNode.addEventListener(evt, oFunc, bCaptures);
+
+//if (typeof(window.event) != "undefined")
+//oNode.attachEvent("on"+evt, oFunc);
+
 }
 
 //Elem Has Attribute
@@ -77,3 +81,6 @@ function includeWithCallBack(file, callback) {
 		}
 	};
 };
+
+
+
